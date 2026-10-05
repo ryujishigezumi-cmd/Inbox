@@ -177,12 +177,23 @@ def load_review_signals(conn, rows):
 
 LOADERS = {name: globals()[f"load_{name}"] for name in LOAD_ORDER}
 
-# 再投入時に追記型テーブルを重複させないため、取り込み前にクリアする対象
+# 追記型テーブル。再投入時の重複を防ぐため、CSV に含まれるキー範囲の既存行だけを削除してから取り込む
+# （別ディレクトリから一部の大学・年度だけを追加投入しても、他のデータは消えない）
 _APPEND_TABLES = {
-    "employment_companies": "employment_company",
-    "student_signals": "student_signal",
-    "review_signals": "review_signal",
+    "employment_companies": ("employment_company", ("faculty_id", "year")),
+    "student_signals": ("student_signal", ("year", "segment")),
+    "review_signals": ("review_signal", ("company_id", "year")),
 }
+
+
+def _clear_scope(conn, name, data):
+    table, keys = _APPEND_TABLES[name]
+    defaults = {"segment": "全体"}
+    scopes = {tuple((r.get(k) or defaults.get(k, "")).strip() for k in keys) for r in data}
+    where = " AND ".join(f"{k}=?" for k in keys)
+    for scope in scopes:
+        params = [int(v) if k == "year" and v else v for k, v in zip(keys, scope)]
+        conn.execute(f"DELETE FROM {table} WHERE {where}", params)
 
 
 def ingest_dir(conn, csv_dir: Path) -> dict:
@@ -194,7 +205,7 @@ def ingest_dir(conn, csv_dir: Path) -> dict:
                 continue
             data = _read(path)
             if name in _APPEND_TABLES:
-                conn.execute(f"DELETE FROM {_APPEND_TABLES[name]}")
+                _clear_scope(conn, name, data)
             LOADERS[name](conn, data)
             counts[name] = len(data)
         # 企業辞書が後から増えた場合に備え、未解決の就職先を再解決
