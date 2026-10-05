@@ -1,0 +1,17 @@
+university_id,name,region,prefecture,establishment,student_count,disclosure_level,source_id
+waseda,早稲田大学,関東,東京都,私立,38000,A,demo-portraits
+keio,慶應義塾大学,関東,東京都,私立,28000,B,demo-portraits
+meiji,明治大学,関東,東京都,私立,30000,A,demo-portraits
+aoyama,青山学院大学,関東,東京都,私立,18000,A,demo-portraits
+rikkyo,立教大学,関東,東京都,私立,19000,A,demo-portraits
+chuo,中央大学,関東,東京都,私立,25000,A,demo-portraits
+hosei,法政大学,関東,東京都,私立,27000,A,demo-portraits
+hitotsubashi,一橋大学,関東,東京都,国立,4400,C,demo-portraits
+tsukuba,筑波大学,関東,茨城県,国立,9800,B,demo-portraits
+chiba,千葉大学,関東,千葉県,国立,10000,B,demo-portraits
+kobe,神戸大学,関西,兵庫県,国立,11500,B,demo-portraits
+doshisha,同志社大学,関西,京都府,私立,26000,A,demo-portraits
+kansai,関西大学,関西,大阪府,私立,28000,A,demo-portraits
+kwansei,関西学院大学,関西,兵庫県,私立,24000,A,demo-portraits
+hiroshima,広島大学,中国,広島県,国立,10500,C,demo-portraits
+fukuoka,福岡大学,九州,福岡県,私立,19000,B,demo-portraits

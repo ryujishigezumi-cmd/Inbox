@@ -1,0 +1,474 @@
+company_id,attribute,value,source_id
+nitori,給与,"大卒初任給 300,000円（サンプル）",demo-company
+nitori,キャリア,配置転換を通じた複数職種経験（サンプル記述）,demo-company
+nitori,安定性,（要取得：有価証券報告書）,demo-company
+nitori,ブランド力,人気度指標 75（サンプル）,demo-company
+nitori,勤務地,全国の店舗・本部,demo-company
+nitori,転勤,全国転勤あり（ジョブローテーション）,demo-company
+nitori,職種,店舗運営→本部職（商品・物流・IT 等）,demo-company
+nitori,IT/DX,自社IT部門・EC・SCM（サンプル記述）,demo-company
+nitori,グローバル,海外店舗・調達,demo-company
+nitori,商品企画,製造物流IT小売業として企画〜物流〜販売まで一気通貫（サンプル記述）,demo-company
+nitori,若手裁量,店長等で早期に事業運営,demo-company
+fastretailing,給与,"大卒初任給 330,000円（サンプル）",demo-company
+fastretailing,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+fastretailing,安定性,（要取得：有価証券報告書）,demo-company
+fastretailing,ブランド力,人気度指標 80（サンプル）,demo-company
+fastretailing,勤務地,全国の店舗・本部,demo-company
+fastretailing,転勤,全国転勤あり（ジョブローテーション）,demo-company
+fastretailing,職種,店舗運営→本部職（商品・物流・IT 等）,demo-company
+fastretailing,IT/DX,EC・店舗DX,demo-company
+fastretailing,グローバル,海外店舗・調達,demo-company
+fastretailing,商品企画,あり（製造小売型は企画〜販売まで）,demo-company
+fastretailing,若手裁量,店長等で早期に事業運営,demo-company
+aeon,給与,"大卒初任給 270,000円（サンプル）",demo-company
+aeon,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+aeon,安定性,（要取得：有価証券報告書）,demo-company
+aeon,ブランド力,人気度指標 55（サンプル）,demo-company
+aeon,勤務地,全国の店舗・本部,demo-company
+aeon,転勤,全国転勤あり（ジョブローテーション）,demo-company
+aeon,職種,店舗運営→本部職（商品・物流・IT 等）,demo-company
+aeon,IT/DX,EC・店舗DX,demo-company
+aeon,グローバル,海外店舗・調達,demo-company
+aeon,商品企画,あり（製造小売型は企画〜販売まで）,demo-company
+aeon,若手裁量,店長等で早期に事業運営,demo-company
+ryohin,給与,"大卒初任給 280,000円（サンプル）",demo-company
+ryohin,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+ryohin,安定性,（要取得：有価証券報告書）,demo-company
+ryohin,ブランド力,人気度指標 60（サンプル）,demo-company
+ryohin,勤務地,全国の店舗・本部,demo-company
+ryohin,転勤,全国転勤あり（ジョブローテーション）,demo-company
+ryohin,職種,店舗運営→本部職（商品・物流・IT 等）,demo-company
+ryohin,IT/DX,EC・店舗DX,demo-company
+ryohin,グローバル,海外店舗・調達,demo-company
+ryohin,商品企画,あり（製造小売型は企画〜販売まで）,demo-company
+ryohin,若手裁量,店長等で早期に事業運営,demo-company
+seven,給与,"大卒初任給 270,000円（サンプル）",demo-company
+seven,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+seven,安定性,（要取得：有価証券報告書）,demo-company
+seven,ブランド力,人気度指標 45（サンプル）,demo-company
+seven,勤務地,全国の店舗・本部,demo-company
+seven,転勤,全国転勤あり（ジョブローテーション）,demo-company
+seven,職種,店舗運営→本部職（商品・物流・IT 等）,demo-company
+seven,IT/DX,EC・店舗DX,demo-company
+seven,グローバル,海外店舗・調達,demo-company
+seven,商品企画,あり（製造小売型は企画〜販売まで）,demo-company
+seven,若手裁量,店長等で早期に事業運営,demo-company
+rakuten,給与,"大卒初任給 310,000円（サンプル）",demo-company
+rakuten,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+rakuten,安定性,（要取得：有価証券報告書）,demo-company
+rakuten,ブランド力,人気度指標 70（サンプル）,demo-company
+rakuten,勤務地,首都圏中心,demo-company
+rakuten,転勤,限定的,demo-company
+rakuten,職種,SE・コンサル・営業,demo-company
+rakuten,IT/DX,中核事業,demo-company
+rakuten,グローバル,海外拠点あり,demo-company
+rakuten,商品企画,サービス企画,demo-company
+rakuten,若手裁量,プロジェクト単位,demo-company
+nttdata,給与,"大卒初任給 300,000円（サンプル）",demo-company
+nttdata,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+nttdata,安定性,（要取得：有価証券報告書）,demo-company
+nttdata,ブランド力,人気度指標 85（サンプル）,demo-company
+nttdata,勤務地,首都圏中心,demo-company
+nttdata,転勤,限定的,demo-company
+nttdata,職種,SE・コンサル・営業,demo-company
+nttdata,IT/DX,中核事業,demo-company
+nttdata,グローバル,海外拠点あり,demo-company
+nttdata,商品企画,サービス企画,demo-company
+nttdata,若手裁量,プロジェクト単位,demo-company
+fujitsu,給与,"大卒初任給 290,000円（サンプル）",demo-company
+fujitsu,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+fujitsu,安定性,（要取得：有価証券報告書）,demo-company
+fujitsu,ブランド力,人気度指標 70（サンプル）,demo-company
+fujitsu,勤務地,首都圏中心,demo-company
+fujitsu,転勤,限定的,demo-company
+fujitsu,職種,SE・コンサル・営業,demo-company
+fujitsu,IT/DX,中核事業,demo-company
+fujitsu,グローバル,海外拠点あり,demo-company
+fujitsu,商品企画,サービス企画,demo-company
+fujitsu,若手裁量,プロジェクト単位,demo-company
+nec,給与,"大卒初任給 290,000円（サンプル）",demo-company
+nec,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+nec,安定性,（要取得：有価証券報告書）,demo-company
+nec,ブランド力,人気度指標 60（サンプル）,demo-company
+nec,勤務地,首都圏中心,demo-company
+nec,転勤,限定的,demo-company
+nec,職種,SE・コンサル・営業,demo-company
+nec,IT/DX,中核事業,demo-company
+nec,グローバル,海外拠点あり,demo-company
+nec,商品企画,サービス企画,demo-company
+nec,若手裁量,プロジェクト単位,demo-company
+softbank,給与,"大卒初任給 300,000円（サンプル）",demo-company
+softbank,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+softbank,安定性,（要取得：有価証券報告書）,demo-company
+softbank,ブランド力,人気度指標 70（サンプル）,demo-company
+softbank,勤務地,首都圏中心,demo-company
+softbank,転勤,限定的,demo-company
+softbank,職種,SE・コンサル・営業,demo-company
+softbank,IT/DX,中核事業,demo-company
+softbank,グローバル,海外拠点あり,demo-company
+softbank,商品企画,サービス企画,demo-company
+softbank,若手裁量,プロジェクト単位,demo-company
+cyberagent,給与,"大卒初任給 340,000円（サンプル）",demo-company
+cyberagent,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+cyberagent,安定性,（要取得：有価証券報告書）,demo-company
+cyberagent,ブランド力,人気度指標 65（サンプル）,demo-company
+cyberagent,勤務地,首都圏中心,demo-company
+cyberagent,転勤,限定的,demo-company
+cyberagent,職種,SE・コンサル・営業,demo-company
+cyberagent,IT/DX,中核事業,demo-company
+cyberagent,グローバル,海外拠点あり,demo-company
+cyberagent,商品企画,サービス企画,demo-company
+cyberagent,若手裁量,プロジェクト単位,demo-company
+recruit,給与,"大卒初任給 330,000円（サンプル）",demo-company
+recruit,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+recruit,安定性,（要取得：有価証券報告書）,demo-company
+recruit,ブランド力,人気度指標 75（サンプル）,demo-company
+recruit,勤務地,（要取得）,demo-company
+recruit,転勤,（要取得）,demo-company
+recruit,職種,（要取得）,demo-company
+recruit,IT/DX,（要取得）,demo-company
+recruit,グローバル,（要取得）,demo-company
+recruit,商品企画,（要取得）,demo-company
+recruit,若手裁量,（要取得）,demo-company
+accenture,給与,"大卒初任給 430,000円（サンプル）",demo-company
+accenture,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+accenture,安定性,（要取得：有価証券報告書）,demo-company
+accenture,ブランド力,人気度指標 90（サンプル）,demo-company
+accenture,勤務地,首都圏中心,demo-company
+accenture,転勤,原則なし（出張あり）,demo-company
+accenture,職種,コンサルタント,demo-company
+accenture,IT/DX,DX支援が主力,demo-company
+accenture,グローバル,グローバルファーム,demo-company
+accenture,商品企画,なし（支援側）,demo-company
+accenture,若手裁量,高い（成果主義）,demo-company
+deloitte,給与,"大卒初任給 450,000円（サンプル）",demo-company
+deloitte,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+deloitte,安定性,（要取得：有価証券報告書）,demo-company
+deloitte,ブランド力,人気度指標 80（サンプル）,demo-company
+deloitte,勤務地,首都圏中心,demo-company
+deloitte,転勤,原則なし（出張あり）,demo-company
+deloitte,職種,コンサルタント,demo-company
+deloitte,IT/DX,DX支援が主力,demo-company
+deloitte,グローバル,グローバルファーム,demo-company
+deloitte,商品企画,なし（支援側）,demo-company
+deloitte,若手裁量,高い（成果主義）,demo-company
+pwc,給与,"大卒初任給 450,000円（サンプル）",demo-company
+pwc,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+pwc,安定性,（要取得：有価証券報告書）,demo-company
+pwc,ブランド力,人気度指標 75（サンプル）,demo-company
+pwc,勤務地,首都圏中心,demo-company
+pwc,転勤,原則なし（出張あり）,demo-company
+pwc,職種,コンサルタント,demo-company
+pwc,IT/DX,DX支援が主力,demo-company
+pwc,グローバル,グローバルファーム,demo-company
+pwc,商品企画,なし（支援側）,demo-company
+pwc,若手裁量,高い（成果主義）,demo-company
+mufg,給与,"大卒初任給 300,000円（サンプル）",demo-company
+mufg,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+mufg,安定性,（要取得：有価証券報告書）,demo-company
+mufg,ブランド力,人気度指標 85（サンプル）,demo-company
+mufg,勤務地,全国支店,demo-company
+mufg,転勤,あり（定期異動）,demo-company
+mufg,職種,総合職（法人・リテール・本部）,demo-company
+mufg,IT/DX,デジタル部門拡大中,demo-company
+mufg,グローバル,海外拠点あり,demo-company
+mufg,商品企画,金融商品企画,demo-company
+mufg,若手裁量,段階的,demo-company
+smbc,給与,"大卒初任給 300,000円（サンプル）",demo-company
+smbc,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+smbc,安定性,（要取得：有価証券報告書）,demo-company
+smbc,ブランド力,人気度指標 80（サンプル）,demo-company
+smbc,勤務地,全国支店,demo-company
+smbc,転勤,あり（定期異動）,demo-company
+smbc,職種,総合職（法人・リテール・本部）,demo-company
+smbc,IT/DX,デジタル部門拡大中,demo-company
+smbc,グローバル,海外拠点あり,demo-company
+smbc,商品企画,金融商品企画,demo-company
+smbc,若手裁量,段階的,demo-company
+mizuho,給与,"大卒初任給 300,000円（サンプル）",demo-company
+mizuho,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+mizuho,安定性,（要取得：有価証券報告書）,demo-company
+mizuho,ブランド力,人気度指標 75（サンプル）,demo-company
+mizuho,勤務地,全国支店,demo-company
+mizuho,転勤,あり（定期異動）,demo-company
+mizuho,職種,総合職（法人・リテール・本部）,demo-company
+mizuho,IT/DX,デジタル部門拡大中,demo-company
+mizuho,グローバル,海外拠点あり,demo-company
+mizuho,商品企画,金融商品企画,demo-company
+mizuho,若手裁量,段階的,demo-company
+tokiomarine,給与,"大卒初任給 290,000円（サンプル）",demo-company
+tokiomarine,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+tokiomarine,安定性,（要取得：有価証券報告書）,demo-company
+tokiomarine,ブランド力,人気度指標 80（サンプル）,demo-company
+tokiomarine,勤務地,全国支店,demo-company
+tokiomarine,転勤,あり（定期異動）,demo-company
+tokiomarine,職種,総合職（法人・リテール・本部）,demo-company
+tokiomarine,IT/DX,デジタル部門拡大中,demo-company
+tokiomarine,グローバル,海外拠点あり,demo-company
+tokiomarine,商品企画,金融商品企画,demo-company
+tokiomarine,若手裁量,段階的,demo-company
+nomura,給与,"大卒初任給 300,000円（サンプル）",demo-company
+nomura,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+nomura,安定性,（要取得：有価証券報告書）,demo-company
+nomura,ブランド力,人気度指標 65（サンプル）,demo-company
+nomura,勤務地,全国支店,demo-company
+nomura,転勤,あり（定期異動）,demo-company
+nomura,職種,総合職（法人・リテール・本部）,demo-company
+nomura,IT/DX,デジタル部門拡大中,demo-company
+nomura,グローバル,海外拠点あり,demo-company
+nomura,商品企画,金融商品企画,demo-company
+nomura,若手裁量,段階的,demo-company
+fukuokafg,給与,"大卒初任給 250,000円（サンプル）",demo-company
+fukuokafg,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+fukuokafg,安定性,（要取得：有価証券報告書）,demo-company
+fukuokafg,ブランド力,人気度指標 40（サンプル）,demo-company
+fukuokafg,勤務地,全国支店,demo-company
+fukuokafg,転勤,あり（定期異動）,demo-company
+fukuokafg,職種,総合職（法人・リテール・本部）,demo-company
+fukuokafg,IT/DX,デジタル部門拡大中,demo-company
+fukuokafg,グローバル,海外拠点あり,demo-company
+fukuokafg,商品企画,金融商品企画,demo-company
+fukuokafg,若手裁量,段階的,demo-company
+hirogin,給与,"大卒初任給 240,000円（サンプル）",demo-company
+hirogin,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+hirogin,安定性,（要取得：有価証券報告書）,demo-company
+hirogin,ブランド力,人気度指標 35（サンプル）,demo-company
+hirogin,勤務地,全国支店,demo-company
+hirogin,転勤,あり（定期異動）,demo-company
+hirogin,職種,総合職（法人・リテール・本部）,demo-company
+hirogin,IT/DX,デジタル部門拡大中,demo-company
+hirogin,グローバル,海外拠点あり,demo-company
+hirogin,商品企画,金融商品企画,demo-company
+hirogin,若手裁量,段階的,demo-company
+mitsubishicorp,給与,"大卒初任給 330,000円（サンプル）",demo-company
+mitsubishicorp,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+mitsubishicorp,安定性,（要取得：有価証券報告書）,demo-company
+mitsubishicorp,ブランド力,人気度指標 90（サンプル）,demo-company
+mitsubishicorp,勤務地,（要取得）,demo-company
+mitsubishicorp,転勤,（要取得）,demo-company
+mitsubishicorp,職種,（要取得）,demo-company
+mitsubishicorp,IT/DX,（要取得）,demo-company
+mitsubishicorp,グローバル,（要取得）,demo-company
+mitsubishicorp,商品企画,（要取得）,demo-company
+mitsubishicorp,若手裁量,（要取得）,demo-company
+itochu,給与,"大卒初任給 330,000円（サンプル）",demo-company
+itochu,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+itochu,安定性,（要取得：有価証券報告書）,demo-company
+itochu,ブランド力,人気度指標 90（サンプル）,demo-company
+itochu,勤務地,（要取得）,demo-company
+itochu,転勤,（要取得）,demo-company
+itochu,職種,（要取得）,demo-company
+itochu,IT/DX,（要取得）,demo-company
+itochu,グローバル,（要取得）,demo-company
+itochu,商品企画,（要取得）,demo-company
+itochu,若手裁量,（要取得）,demo-company
+ana,給与,"大卒初任給 260,000円（サンプル）",demo-company
+ana,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+ana,安定性,（要取得：有価証券報告書）,demo-company
+ana,ブランド力,人気度指標 75（サンプル）,demo-company
+ana,勤務地,（要取得）,demo-company
+ana,転勤,（要取得）,demo-company
+ana,職種,（要取得）,demo-company
+ana,IT/DX,（要取得）,demo-company
+ana,グローバル,（要取得）,demo-company
+ana,商品企画,（要取得）,demo-company
+ana,若手裁量,（要取得）,demo-company
+jal,給与,"大卒初任給 260,000円（サンプル）",demo-company
+jal,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+jal,安定性,（要取得：有価証券報告書）,demo-company
+jal,ブランド力,人気度指標 70（サンプル）,demo-company
+jal,勤務地,（要取得）,demo-company
+jal,転勤,（要取得）,demo-company
+jal,職種,（要取得）,demo-company
+jal,IT/DX,（要取得）,demo-company
+jal,グローバル,（要取得）,demo-company
+jal,商品企画,（要取得）,demo-company
+jal,若手裁量,（要取得）,demo-company
+jtb,給与,"大卒初任給 240,000円（サンプル）",demo-company
+jtb,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+jtb,安定性,（要取得：有価証券報告書）,demo-company
+jtb,ブランド力,人気度指標 50（サンプル）,demo-company
+jtb,勤務地,（要取得）,demo-company
+jtb,転勤,（要取得）,demo-company
+jtb,職種,（要取得）,demo-company
+jtb,IT/DX,（要取得）,demo-company
+jtb,グローバル,（要取得）,demo-company
+jtb,商品企画,（要取得）,demo-company
+jtb,若手裁量,（要取得）,demo-company
+sony,給与,"大卒初任給 300,000円（サンプル）",demo-company
+sony,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+sony,安定性,（要取得：有価証券報告書）,demo-company
+sony,ブランド力,人気度指標 85（サンプル）,demo-company
+sony,勤務地,本社・工場・営業所,demo-company
+sony,転勤,あり,demo-company
+sony,職種,技術・営業・企画,demo-company
+sony,IT/DX,製造DX,demo-company
+sony,グローバル,海外売上比率高,demo-company
+sony,商品企画,あり,demo-company
+sony,若手裁量,部門による,demo-company
+panasonic,給与,"大卒初任給 280,000円（サンプル）",demo-company
+panasonic,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+panasonic,安定性,（要取得：有価証券報告書）,demo-company
+panasonic,ブランド力,人気度指標 60（サンプル）,demo-company
+panasonic,勤務地,本社・工場・営業所,demo-company
+panasonic,転勤,あり,demo-company
+panasonic,職種,技術・営業・企画,demo-company
+panasonic,IT/DX,製造DX,demo-company
+panasonic,グローバル,海外売上比率高,demo-company
+panasonic,商品企画,あり,demo-company
+panasonic,若手裁量,部門による,demo-company
+kao,給与,"大卒初任給 280,000円（サンプル）",demo-company
+kao,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+kao,安定性,（要取得：有価証券報告書）,demo-company
+kao,ブランド力,人気度指標 70（サンプル）,demo-company
+kao,勤務地,本社・工場・営業所,demo-company
+kao,転勤,あり,demo-company
+kao,職種,技術・営業・企画,demo-company
+kao,IT/DX,製造DX,demo-company
+kao,グローバル,海外売上比率高,demo-company
+kao,商品企画,あり,demo-company
+kao,若手裁量,部門による,demo-company
+toyota,給与,"大卒初任給 290,000円（サンプル）",demo-company
+toyota,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+toyota,安定性,（要取得：有価証券報告書）,demo-company
+toyota,ブランド力,人気度指標 80（サンプル）,demo-company
+toyota,勤務地,本社・工場・営業所,demo-company
+toyota,転勤,あり,demo-company
+toyota,職種,技術・営業・企画,demo-company
+toyota,IT/DX,製造DX,demo-company
+toyota,グローバル,海外売上比率高,demo-company
+toyota,商品企画,あり,demo-company
+toyota,若手裁量,部門による,demo-company
+hitachi,給与,"大卒初任給 290,000円（サンプル）",demo-company
+hitachi,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+hitachi,安定性,（要取得：有価証券報告書）,demo-company
+hitachi,ブランド力,人気度指標 75（サンプル）,demo-company
+hitachi,勤務地,本社・工場・営業所,demo-company
+hitachi,転勤,あり,demo-company
+hitachi,職種,技術・営業・企画,demo-company
+hitachi,IT/DX,製造DX,demo-company
+hitachi,グローバル,海外売上比率高,demo-company
+hitachi,商品企画,あり,demo-company
+hitachi,若手裁量,部門による,demo-company
+mazda,給与,"大卒初任給 260,000円（サンプル）",demo-company
+mazda,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+mazda,安定性,（要取得：有価証券報告書）,demo-company
+mazda,ブランド力,人気度指標 45（サンプル）,demo-company
+mazda,勤務地,本社・工場・営業所,demo-company
+mazda,転勤,あり,demo-company
+mazda,職種,技術・営業・企画,demo-company
+mazda,IT/DX,製造DX,demo-company
+mazda,グローバル,海外売上比率高,demo-company
+mazda,商品企画,あり,demo-company
+mazda,若手裁量,部門による,demo-company
+suntory,給与,"大卒初任給 280,000円（サンプル）",demo-company
+suntory,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+suntory,安定性,（要取得：有価証券報告書）,demo-company
+suntory,ブランド力,人気度指標 85（サンプル）,demo-company
+suntory,勤務地,（要取得）,demo-company
+suntory,転勤,（要取得）,demo-company
+suntory,職種,（要取得）,demo-company
+suntory,IT/DX,（要取得）,demo-company
+suntory,グローバル,（要取得）,demo-company
+suntory,商品企画,（要取得）,demo-company
+suntory,若手裁量,（要取得）,demo-company
+ajinomoto,給与,"大卒初任給 280,000円（サンプル）",demo-company
+ajinomoto,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+ajinomoto,安定性,（要取得：有価証券報告書）,demo-company
+ajinomoto,ブランド力,人気度指標 75（サンプル）,demo-company
+ajinomoto,勤務地,（要取得）,demo-company
+ajinomoto,転勤,（要取得）,demo-company
+ajinomoto,職種,（要取得）,demo-company
+ajinomoto,IT/DX,（要取得）,demo-company
+ajinomoto,グローバル,（要取得）,demo-company
+ajinomoto,商品企画,（要取得）,demo-company
+ajinomoto,若手裁量,（要取得）,demo-company
+yamato,給与,"大卒初任給 250,000円（サンプル）",demo-company
+yamato,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+yamato,安定性,（要取得：有価証券報告書）,demo-company
+yamato,ブランド力,人気度指標 35（サンプル）,demo-company
+yamato,勤務地,（要取得）,demo-company
+yamato,転勤,（要取得）,demo-company
+yamato,職種,（要取得）,demo-company
+yamato,IT/DX,（要取得）,demo-company
+yamato,グローバル,（要取得）,demo-company
+yamato,商品企画,（要取得）,demo-company
+yamato,若手裁量,（要取得）,demo-company
+nipponexpress,給与,"大卒初任給 260,000円（サンプル）",demo-company
+nipponexpress,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+nipponexpress,安定性,（要取得：有価証券報告書）,demo-company
+nipponexpress,ブランド力,人気度指標 40（サンプル）,demo-company
+nipponexpress,勤務地,（要取得）,demo-company
+nipponexpress,転勤,（要取得）,demo-company
+nipponexpress,職種,（要取得）,demo-company
+nipponexpress,IT/DX,（要取得）,demo-company
+nipponexpress,グローバル,（要取得）,demo-company
+nipponexpress,商品企画,（要取得）,demo-company
+nipponexpress,若手裁量,（要取得）,demo-company
+mitsuifudosan,給与,"大卒初任給 320,000円（サンプル）",demo-company
+mitsuifudosan,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+mitsuifudosan,安定性,（要取得：有価証券報告書）,demo-company
+mitsuifudosan,ブランド力,人気度指標 80（サンプル）,demo-company
+mitsuifudosan,勤務地,（要取得）,demo-company
+mitsuifudosan,転勤,（要取得）,demo-company
+mitsuifudosan,職種,（要取得）,demo-company
+mitsuifudosan,IT/DX,（要取得）,demo-company
+mitsuifudosan,グローバル,（要取得）,demo-company
+mitsuifudosan,商品企画,（要取得）,demo-company
+mitsuifudosan,若手裁量,（要取得）,demo-company
+daiwahouse,給与,"大卒初任給 280,000円（サンプル）",demo-company
+daiwahouse,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+daiwahouse,安定性,（要取得：有価証券報告書）,demo-company
+daiwahouse,ブランド力,人気度指標 60（サンプル）,demo-company
+daiwahouse,勤務地,（要取得）,demo-company
+daiwahouse,転勤,（要取得）,demo-company
+daiwahouse,職種,（要取得）,demo-company
+daiwahouse,IT/DX,（要取得）,demo-company
+daiwahouse,グローバル,（要取得）,demo-company
+daiwahouse,商品企画,（要取得）,demo-company
+daiwahouse,若手裁量,（要取得）,demo-company
+kepco,給与,"大卒初任給 260,000円（サンプル）",demo-company
+kepco,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+kepco,安定性,（要取得：有価証券報告書）,demo-company
+kepco,ブランド力,人気度指標 55（サンプル）,demo-company
+kepco,勤務地,（要取得）,demo-company
+kepco,転勤,（要取得）,demo-company
+kepco,職種,（要取得）,demo-company
+kepco,IT/DX,（要取得）,demo-company
+kepco,グローバル,（要取得）,demo-company
+kepco,商品企画,（要取得）,demo-company
+kepco,若手裁量,（要取得）,demo-company
+jrwest,給与,"大卒初任給 250,000円（サンプル）",demo-company
+jrwest,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+jrwest,安定性,（要取得：有価証券報告書）,demo-company
+jrwest,ブランド力,人気度指標 60（サンプル）,demo-company
+jrwest,勤務地,（要取得）,demo-company
+jrwest,転勤,（要取得）,demo-company
+jrwest,職種,（要取得）,demo-company
+jrwest,IT/DX,（要取得）,demo-company
+jrwest,グローバル,（要取得）,demo-company
+jrwest,商品企画,（要取得）,demo-company
+jrwest,若手裁量,（要取得）,demo-company
+kyuden,給与,"大卒初任給 250,000円（サンプル）",demo-company
+kyuden,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+kyuden,安定性,（要取得：有価証券報告書）,demo-company
+kyuden,ブランド力,人気度指標 50（サンプル）,demo-company
+kyuden,勤務地,（要取得）,demo-company
+kyuden,転勤,（要取得）,demo-company
+kyuden,職種,（要取得）,demo-company
+kyuden,IT/DX,（要取得）,demo-company
+kyuden,グローバル,（要取得）,demo-company
+kyuden,商品企画,（要取得）,demo-company
+kyuden,若手裁量,（要取得）,demo-company
+public,給与,—,demo-company
+public,キャリア,（要取得：採用サイトのキャリアパス記載）,demo-company
+public,安定性,（要取得：有価証券報告書）,demo-company
+public,ブランド力,人気度指標 70（サンプル）,demo-company
+public,勤務地,（要取得）,demo-company
+public,転勤,（要取得）,demo-company
+public,職種,（要取得）,demo-company
+public,IT/DX,（要取得）,demo-company
+public,グローバル,（要取得）,demo-company
+public,商品企画,（要取得）,demo-company
+public,若手裁量,（要取得）,demo-company
