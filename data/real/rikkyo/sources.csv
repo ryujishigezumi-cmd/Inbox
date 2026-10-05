@@ -1,0 +1,4 @@
+source_id,url,source_name,source_type,retrieved_at,published_at,target_year,scope,reliability,note
+rikkyo-career-2025,https://www.rikkyo.ac.jp/about/disclosure/career/index.html,立教大学 情報公開・データ 就職・進学データ（2025年度 学部別進路決定状況・学部別就職状況）,university,2026-10-05,,2025,public,A,"2026年3月卒業者（2025年9月卒業者を含む）。GLAPは文学部に含む。就職率=就職決定者÷就職希望者（大学公表値）。卒業者数は学部別の就職決定者・進学決定者・その他・進路不明者の公表値の和（全体合計4,522と一致）。企業名は学部別「決定者数の多い企業20社」（人数非公開）"
+rikkyo-gyoshu-2025,https://www.rikkyo.ac.jp/about/disclosure/career/index.html#graph2026_04,立教大学 2025年度 業種別就職状況（学部別）グラフ,university,2026-10-05,,2025,public,A,グラフ画像から割合(%)を目視転記。人数は非公開のため ratio のみ。端数四捨五入のため合計が100%にならない学部あり。区分は大学公表のまま
+rikkyo-zaigaku-2026,https://www.rikkyo.ac.jp/about/disclosure/qo9edr00000081kh-att/zaigaku_u.pdf,立教大学 2026年度 学部学生在籍者数,university,2026-10-05,2026-05-01,2026,public,A,2026年5月1日現在 学部合計

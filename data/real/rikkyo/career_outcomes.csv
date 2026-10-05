@@ -1,0 +1,11 @@
+university_id,faculty_id,year,graduates,employed,further_study,employment_rate,source_id
+rikkyo,rikkyo-letters,2025,897,768,42,97.5,rikkyo-career-2025
+rikkyo,rikkyo-intercultural,2025,148,113,14,92.6,rikkyo-career-2025
+rikkyo,rikkyo-economics,2025,666,579,16,97.6,rikkyo-career-2025
+rikkyo,rikkyo-business,2025,403,356,16,98.3,rikkyo-career-2025
+rikkyo,rikkyo-science,2025,258,128,114,98.5,rikkyo-career-2025
+rikkyo,rikkyo-sociology,2025,522,477,5,98.1,rikkyo-career-2025
+rikkyo,rikkyo-law,2025,575,487,17,96.4,rikkyo-career-2025
+rikkyo,rikkyo-tourism,2025,342,307,5,98.7,rikkyo-career-2025
+rikkyo,rikkyo-community,2025,407,358,14,98.6,rikkyo-career-2025
+rikkyo,rikkyo-psychology,2025,304,238,17,96.4,rikkyo-career-2025
