@@ -14,6 +14,8 @@ const bar = (ratio, main = false) => `<div class="bar${main ? " main" : ""}"><sp
 const listed = (v) => (v === null || v === undefined ? '<span class="tag">不明</span>' : v ? '<span class="tag yes">掲載あり</span>' : '<span class="tag">掲載なし</span>');
 
 async function api(path, opts) {
+  // ブラウザ版デモ（scripts/build_static_demo.py）では事前計算したデータから応答する
+  if (window.RMI_STATIC) return window.RMI_STATIC(path, opts);
   const r = await fetch(path, opts);
   if (!r.ok) throw new Error(`${r.status} ${(await r.json().catch(() => ({}))).detail || r.statusText}`);
   return r.json();
