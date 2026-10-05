@@ -1,0 +1,16 @@
+faculty_id,university_id,faculty,department,field,student_count,source_id
+hosei-law,hosei,法学部,,文系,,hosei-gakka-2025
+hosei-letters,hosei,文学部,,文系,,hosei-gakka-2025
+hosei-economics,hosei,経済学部,,文系,,hosei-gakka-2025
+hosei-sociology,hosei,社会学部,,文系,,hosei-gakka-2025
+hosei-business,hosei,経営学部,,文系,,hosei-gakka-2025
+hosei-intercultural,hosei,国際文化学部,,文系,,hosei-gakka-2025
+hosei-environment,hosei,人間環境学部,,文理融合,,hosei-gakka-2025
+hosei-welfare,hosei,現代福祉学部,,文系,,hosei-gakka-2025
+hosei-cis,hosei,情報科学部,,理系,,hosei-gakka-2025
+hosei-careerdesign,hosei,キャリアデザイン学部,,文系,,hosei-gakka-2025
+hosei-design,hosei,デザイン工学部,,理系,,hosei-gakka-2025
+hosei-science-eng,hosei,理工学部,,理系,,hosei-gakka-2025
+hosei-bioscience,hosei,生命科学部,,理系,,hosei-gakka-2025
+hosei-gis,hosei,グローバル教養学部,,文系,,hosei-gakka-2025
+hosei-sports,hosei,スポーツ健康学部,,文理融合,,hosei-gakka-2025
