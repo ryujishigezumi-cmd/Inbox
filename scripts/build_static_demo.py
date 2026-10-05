@@ -30,17 +30,26 @@ window.RMI_STATIC = async (path, opts) => {
   const u = new URL(path, "http://demo.local");
   const p = decodeURIComponent(u.pathname), q = u.searchParams;
   const notFound = () => { throw new Error("404 見つかりません"); };
+  const src = (ids) => ids.map((i) => D.sourceMap[i]);
   if (p === "/api/meta") return D.meta;
   if (p === "/api/sources") return D.sources;
   if (p === "/api/insights") return D.insights[q.get("segment") || "全体"] || notFound();
-  if (p.startsWith("/api/faculties/")) return D.faculties[p.split("/").pop()] || notFound();
-  if (p.startsWith("/api/strategy/")) return D.strategies[p.split("/").pop()] || notFound();
+  if (p.startsWith("/api/faculties/")) {
+    const f = D.faculties[p.split("/").pop()] || notFound();
+    return { ...f, sources: src(f.sources) };
+  }
+  if (p.startsWith("/api/strategy/")) {
+    const s = D.strategies[p.split("/").pop()] || notFound();
+    return { ...s, context: { sources: src(s.context.sources) } };
+  }
   if (p.startsWith("/api/companies/")) {
     const cid = p.split("/").pop(), base = D.companies[cid];
     if (!base) notFound();
+    const out = { ...base, sources: src(base.sources), signal_comparison: base.signal_comparison || D.emptySignals };
+    // 学部を指定したときは、その学部の競合 TOP10 に入っていれば学部内のスコアを使う
     const fid = q.get("faculty_id");
-    const row = fid && D.facScores[fid] && D.facScores[fid][cid];
-    return row ? { ...base, competition: row } : base;
+    const row = fid && D.faculties[fid] && D.faculties[fid].competitors.find((c) => c.company_id === cid);
+    return row ? { ...out, competition: row } : out;
   }
   if (p === "/api/search") {
     const s = (q.get("q") || "").trim();
@@ -82,10 +91,37 @@ window.RMI_STATIC = async (path, opts) => {
 """
 
 
-def build(out: Path):
-    conn = ingest.reset_db(config.DB_PATH)
-    ingest.ingest_dir(conn, config.SAMPLE_DIR)
-    conn.close()
+def _compact(data):
+    """1ページ 16MB 以内に収めるため、重複する情報を共有化する（表示内容は変えない）。"""
+    sources = {}
+
+    def ids(items):
+        for src in items:
+            sources[src["source_id"]] = src
+        return [src["source_id"] for src in items]
+
+    for part in ("faculties", "companies"):
+        for v in data[part].values():
+            v["sources"] = ids(v["sources"])
+    empty_signals = None
+    for v in data["companies"].values():
+        if all(r["target"] is None and r["competitor"] is None for r in v["signal_comparison"]):
+            empty_signals = [{"signal": r["signal"], "target": None, "competitor": None} for r in v["signal_comparison"]]
+            del v["signal_comparison"]
+    for v in data["strategies"].values():
+        v["context"] = {"sources": ids(v["context"]["sources"])}
+    data["sourceMap"] = sources
+    data["emptySignals"] = empty_signals
+
+
+def build(out: Path, real=False):
+    if real:
+        from scripts.load_real_data import main as load_real
+        load_real(["--db", str(config.DB_PATH)])
+    else:
+        conn = ingest.reset_db(config.DB_PATH)
+        ingest.ingest_dir(conn, config.SAMPLE_DIR)
+        conn.close()
     main._conn = None
     client = TestClient(main.app)
     get = lambda path, **params: client.get(path, params=params).raise_for_status().json()  # noqa: E731
@@ -101,20 +137,24 @@ def build(out: Path):
         "strategies": {f: get(f"/api/strategy/{f}", use_ai="false") for f in a.faculties},
         "companies": {c: get(f"/api/companies/{c}") for c in a.companies},
         "facCompanies": {f: sorted(cs) for f, cs in a.fac_companies.items()},
-        "facScores": {f: {c: a.company_row(c, f) for c in cs} for f, cs in a.fac_companies.items()},
         "themes": THEMES,
     }
+    _compact(data)
     payload = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 
     index = (config.STATIC_DIR / "index.html").read_text(encoding="utf-8")
     body = re.search(r"<body>(.*?)<script src=", index, re.S).group(1)
+    if real:
+        body = body.replace('<main id="app">', '<div class="banner">MVP対象16大学の公式資料（大学サイト・大学ポートレート）から転記した公開データです。'
+                            '大学ごとに取得できた範囲が異なり、ONE CAREER・就職人気ランキング・企業の初任給は未収録です。'
+                            'AI 提案はルールベース生成で表示しています。</div>\n<main id="app">', 1)
     body = body.replace(
         "実データは <code>python -m app.ingest &lt;dir&gt; --reset</code> で投入してください。",
         "ブラウザ版デモのため、AI 提案はルールベース生成、自由記述の分類はキーワード辞書で動きます。")
     css = (config.STATIC_DIR / "style.css").read_text(encoding="utf-8")
     js = (config.STATIC_DIR / "app.js").read_text(encoding="utf-8")
     html = (
-        "<title>採用市場インテリジェンス</title>\n"
+        f"<title>{'16大学 採用市場分析' if real else '採用市場インテリジェンス'}</title>\n"
         f"<style>\n{css}\n</style>\n{body}"
         f"<script>window.RMI_DATA={payload};</script>\n"
         f"<script>{RESOLVER}</script>\n<script>\n{js}\n</script>\n"
@@ -125,4 +165,9 @@ def build(out: Path):
 
 
 if __name__ == "__main__":
-    build(Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "dist" / "demo.html")
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("out", nargs="?")
+    ap.add_argument("--real", action="store_true", help="data/real の公開データで作る（既定はデモ用サンプル）")
+    args = ap.parse_args()
+    build(Path(args.out) if args.out else ROOT / "dist" / ("real.html" if args.real else "demo.html"), real=args.real)

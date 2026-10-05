@@ -1,4 +1,5 @@
 """FastAPI アプリ。起動: uvicorn app.main:app --reload"""
+import os
 from collections import Counter, defaultdict
 from typing import List, Optional
 
@@ -17,13 +18,24 @@ _conn = None
 def get_conn():
     global _conn
     if _conn is None:
+        _analytics_cache.update(key=None, value=None)
         _conn = db.connect()
         db.init_schema(_conn)
     return _conn
 
 
+_analytics_cache = {"key": None, "value": None}
+
+
 def get_analytics(conn=Depends(get_conn)) -> Analytics:
-    return Analytics(conn)
+    """分析結果は DB が変わるまで使い回す（取り込みで DB ファイルの更新時刻が変わる）。"""
+    try:
+        key = (str(config.DB_PATH), os.stat(config.DB_PATH).st_mtime_ns)
+    except OSError:
+        key = None
+    if key is None or _analytics_cache["key"] != key:
+        _analytics_cache.update(key=key, value=Analytics(conn))
+    return _analytics_cache["value"]
 
 
 def _sources(conn, ids):

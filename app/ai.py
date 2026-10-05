@@ -255,7 +255,7 @@ def rule_based_strategy(a, fid, ctx):
         issues.append(f"学部内での {target} の認知・接点が弱い可能性（掲載なし）。")
         actions.append("同学部出身の社員・内定者の有無を確認し、OB/OG 接点を作る")
 
-    comp_inds = {c["industry"] for c in comps}
+    comp_inds = {c["industry"] for c in comps if c["industry"]}
     if comp_inds - {target_ind}:
         appeals.append(f"{target_ind}企業としてのみ訴求すると、{'・'.join(sorted(comp_inds - {target_ind}))} 志望層との比較で優位を作りにくい。事業の幅（企画・物流・IT 等）を前面に出す仮説。")
     if "情報通信業" in comp_inds or "サービス業" in comp_inds:
