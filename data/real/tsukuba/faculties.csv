@@ -1,0 +1,11 @@
+faculty_id,university_id,faculty,department,field,student_count,source_id
+tsukuba-humcul,tsukuba,人文・文化学群,,文系,,tsukuba-shinro-2025
+tsukuba-socint,tsukuba,社会・国際学群,,文系,,tsukuba-shinro-2025
+tsukuba-human,tsukuba,人間学群,,文理融合,,tsukuba-shinro-2025
+tsukuba-lifeenv,tsukuba,生命環境学群,,理系,,tsukuba-shinro-2025
+tsukuba-scieng,tsukuba,理工学群,,理系,,tsukuba-shinro-2025
+tsukuba-info,tsukuba,情報学群,,文理融合,,tsukuba-shinro-2025
+tsukuba-med,tsukuba,医学群,,理系,,tsukuba-shinro-2025
+tsukuba-sport,tsukuba,体育専門学群,,文理融合,,tsukuba-shinro-2025
+tsukuba-art,tsukuba,芸術専門学群,,文系,,tsukuba-shinro-2025
+tsukuba-global,tsukuba,グローバル教育院,,文理融合,,tsukuba-shinro-2025
