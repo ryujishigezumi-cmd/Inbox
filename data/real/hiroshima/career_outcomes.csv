@@ -1,0 +1,17 @@
+university_id,faculty_id,year,graduates,employed,further_study,employment_rate,source_id
+hiroshima,hiroshima-integrated,2024,168,123,33,,hu-np-integrated-2024
+hiroshima,hiroshima-letters,2024,137,95,34,,hu-np-letters-2024
+hiroshima,hiroshima-education,2024,449,318,98,,hu-np-education-2024
+hiroshima,hiroshima-law,2024,173,144,13,,hu-np-law-2024
+hiroshima,hiroshima-economics,2024,198,175,5,,hu-np-economics-2024
+hiroshima,hiroshima-science,2024,231,45,178,,hu-np-science-2024
+hiroshima,hiroshima-medicine,2024,235,192,28,,hu-np-medicine-2024
+hiroshima,hiroshima-dentistry,2024,82,59,13,,hu-np-dentistry-2024
+hiroshima,hiroshima-pharmacy,2024,61,43,18,,hu-np-pharmacy-2024
+hiroshima,hiroshima-engineering,2024,465,89,362,,hu-np-engineering-2024
+hiroshima,hiroshima-bioprod,2024,101,29,68,,hu-np-bioprod-2024
+hiroshima,hiroshima-informatics,2024,97,41,52,,hu-np-informatics-2024
+hiroshima,hiroshima-law,2025,182,133,25,,hu-law-shinro-2025
+hiroshima,hiroshima-economics,2025,187,156,13,,hu-econ-shinro-2025
+hiroshima,hiroshima-science,2025,221,38,171,,hu-sci-shinro-2025
+hiroshima,hiroshima-letters,2025,141,92,37,,hu-bun-shinro-2025

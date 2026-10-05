@@ -1,0 +1,13 @@
+faculty_id,university_id,faculty,department,field,student_count,source_id
+hiroshima-integrated,hiroshima,総合科学部,,文理融合,,hu-np-integrated-2024
+hiroshima-letters,hiroshima,文学部,,文系,,hu-np-letters-2024
+hiroshima-education,hiroshima,教育学部,,文系,,hu-np-education-2024
+hiroshima-law,hiroshima,法学部,,文系,,hu-np-law-2024
+hiroshima-economics,hiroshima,経済学部,,文系,,hu-np-economics-2024
+hiroshima-science,hiroshima,理学部,,理系,,hu-np-science-2024
+hiroshima-medicine,hiroshima,医学部,,理系,,hu-np-medicine-2024
+hiroshima-dentistry,hiroshima,歯学部,,理系,,hu-np-dentistry-2024
+hiroshima-pharmacy,hiroshima,薬学部,,理系,,hu-np-pharmacy-2024
+hiroshima-engineering,hiroshima,工学部,,理系,,hu-np-engineering-2024
+hiroshima-bioprod,hiroshima,生物生産学部,,理系,,hu-np-bioprod-2024
+hiroshima-informatics,hiroshima,情報科学部,,文理融合,,hu-np-informatics-2024
