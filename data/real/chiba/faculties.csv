@@ -1,0 +1,11 @@
+faculty_id,university_id,faculty,department,field,student_count,source_id
+chiba-intl,chiba,国際教養学部,,文系,391,chiba-gakusei-2025
+chiba-letters,chiba,文学部,,文系,769,chiba-gakusei-2025
+chiba-lpe,chiba,法政経学部,,文系,1586,chiba-gakusei-2025
+chiba-edu,chiba,教育学部,,文系,1609,chiba-gakusei-2025
+chiba-sci,chiba,理学部,,理系,884,chiba-gakusei-2025
+chiba-eng,chiba,工学部,,理系,2540,chiba-gakusei-2025
+chiba-hort,chiba,園芸学部,,理系,828,chiba-gakusei-2025
+chiba-med,chiba,医学部,,理系,716,chiba-gakusei-2025
+chiba-pharm,chiba,薬学部,,理系,478,chiba-gakusei-2025
+chiba-nurs,chiba,看護学部,,理系,328,chiba-gakusei-2025

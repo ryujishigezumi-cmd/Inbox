@@ -41,3 +41,8 @@ def test_ambiguous_labels():
     assert s("印刷・同関連業") == "製造業"
     assert s("製造業：電気・情報通信機械器具製造業") == "製造業"
     assert s("情報") == "情報通信業"
+
+
+def test_teachers_public_only_when_public():
+    assert s("教員（公立）") == s("公務員・公立学校教員") == s("国公立学校教員・職員") == "公務"
+    assert s("教員（私立）") == s("教員（大学等）") == s("教員（その他）") == "サービス業"

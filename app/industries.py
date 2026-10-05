@@ -38,6 +38,8 @@ def standardize_industry(label: str) -> str:
         return label
     if label in _EXACT:
         return _EXACT[label]
+    if "教員" in label and "公立" not in label and "公務" not in label:
+        return "サービス業"  # 私立・大学等の教員は教育・学習支援業。公立学校教員だけを公務に入れる
     for words, std in _RULES:
         if any(w in label for w in words):
             return std
