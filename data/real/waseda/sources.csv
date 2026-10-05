@@ -1,0 +1,4 @@
+source_id,url,source_name,source_type,retrieved_at,published_at,target_year,scope,reliability,note
+wu-career-data,https://www.waseda.jp/inst/career/about/data/,早稲田大学キャリアセンター 進路データ・進路報告,university,2026-10-05,,2025,public,A,掲載PDF（2025年度学部別進路状況ほか）は取得時に403（アクセス拒否）のため数値は転記せず
+wu-upj-shinro-2025,https://up-j.shigaku.go.jp/school/category04/00000000268601000.html,大学ポートレート（私学版） 早稲田大学 進路・就職情報（学部別 進路データ集）,government,2026-10-05,,2025,public,A,学部別ページ（/department/category04/00000000268601xxx.html）から転記。2025年度（2025年4月〜2026年3月卒業）。employed=就職者（正規の職員等＋正規の職員等でない者）、further_study=進学者（大学院研究科＋大学学部＋短大本科＋専攻科＋別科）。2023・2024年度は卒業者数のみ。就職率は学部別非公表（全学部96.2%＝就職者÷就職希望者）。人間科学部（通信）はデータ掲載なしのため除外
+wu-discover-2025,https://discover.w.waseda.jp/support/career/data/,早稲田大学 受験生応援サイト DISCOVER WASEDA 進路実績（学部ごとの主な就職先）,university,2026-10-05,,2025,public,A,2025年度実績。企業名のみ公開（人数非公開）、業種見出しなし。業種別就職割合は画像のみで取得時403のため未収録。全学部ランキング（人数付き）は大学全体のため除外
