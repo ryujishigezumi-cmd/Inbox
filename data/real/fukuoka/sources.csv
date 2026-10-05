@@ -1,0 +1,7 @@
+source_id,url,source_name,source_type,retrieved_at,published_at,target_year,scope,reliability,note
+fu-career-data,https://www.career.fukuoka-u.ac.jp/data,福岡大学キャリアセンター 就職データ,university,2026-10-05,,2025,public,A,
+fu-jokyo-2025,http://www.career.fukuoka-u.ac.jp/wp/wp-content/uploads/2026/05/R07jokyo.pdf,福岡大学 令和7年度卒業生就職状況（学部・学科別）一覧表,university,2026-10-05,2026-03-31,2025,public,A,2026年3月31日現在。学部計の行を転記（学科は合算済みの公表値）。就職率=就職決定者/(就職決定者+民間企業希望未決定者)。進学者数=大学院+大学・短大。医学部は医学科を除く（看護学科のみ）
+fu-jokyo-2024,http://www.career.fukuoka-u.ac.jp/wp/wp-content/uploads/2025/05/R06jokyo.pdf,福岡大学 令和6年度卒業生就職状況（学部・学科別）一覧表,university,2026-10-05,2025-03-31,2024,public,A,2025年3月31日現在。学部計の行を転記。就職率=就職決定者/(就職決定者+民間企業希望未決定者)。進学者数=大学院+大学・短大（「ー」は0）。医学部は医学科を除く（看護学科のみ）
+fu-gyoshu-2025,http://www.career.fukuoka-u.ac.jp/wp/wp-content/uploads/2026/05/R07gyoshu.pdf,福岡大学 令和7年度企業業種別就職状況（学部別）,university,2026-10-05,,2025,public,A,学部別帯グラフの人数ラベルを転記（業種A〜Tは大学公表の区分名）。ラベルの無い区分は0。大学病院への就職は教育、学習支援業に区分されている
+fu-gyoshu-2024,http://www.career.fukuoka-u.ac.jp/wp/wp-content/uploads/2025/05/R06gyoshu.pdf,福岡大学 令和6年度企業業種別就職状況（学部別）,university,2026-10-05,,2024,public,A,学部別帯グラフの人数ラベルを転記（業種A〜Tは大学公表の区分名）。ラベルの無い区分は0
+fu-guide2027-companies,https://www.fukuoka-u.ac.jp/fukudai2027/pageindices/index164.html,福岡大学 大学案内2027 学部別 主な就職先（2023〜2025年度）p.162-163,university,2026-10-05,2026-08-31,2025,public,A,2023〜2025年度の3年分をまとめた一覧（年度別でない）のため year=2025 に置いた。人数非公開。理学部・工学部は学科別リストを学部に合算し重複を除去。医学部は看護学科のみ、薬学部・看護学科は[薬局][病院][看護師]等の見出しを industry_raw に。index165.html も参照

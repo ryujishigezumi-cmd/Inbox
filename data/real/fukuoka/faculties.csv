@@ -1,0 +1,11 @@
+faculty_id,university_id,faculty,department,field,student_count,source_id
+fukuoka-humanities,fukuoka,人文学部,,文系,,fu-jokyo-2025
+fukuoka-law,fukuoka,法学部,,文系,,fu-jokyo-2025
+fukuoka-economics,fukuoka,経済学部,,文系,,fu-jokyo-2025
+fukuoka-commerce,fukuoka,商学部,,文系,,fu-jokyo-2025
+fukuoka-commerce2,fukuoka,商学部第二部,,文系,,fu-jokyo-2025
+fukuoka-science,fukuoka,理学部,,理系,,fu-jokyo-2025
+fukuoka-engineering,fukuoka,工学部,,理系,,fu-jokyo-2025
+fukuoka-medicine,fukuoka,医学部,,理系,,fu-jokyo-2025
+fukuoka-pharmacy,fukuoka,薬学部,,理系,,fu-jokyo-2025
+fukuoka-sports,fukuoka,スポーツ科学部,,文理融合,,fu-jokyo-2025

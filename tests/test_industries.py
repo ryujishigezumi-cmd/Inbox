@@ -46,3 +46,11 @@ def test_ambiguous_labels():
 def test_teachers_public_only_when_public():
     assert s("教員（公立）") == s("公務員・公立学校教員") == s("国公立学校教員・職員") == "公務"
     assert s("教員（私立）") == s("教員（大学等）") == s("教員（その他）") == "サービス業"
+
+
+def test_company_list_headings():
+    assert s("病院") == s("看護師") == s("病院・薬局") == s("臨床研修医") == "サービス業"
+    assert s("薬局") == s("流通") == "卸売業・小売業"
+    assert s("製薬企業") == "製造業"
+    assert s("行政") == "公務"
+    assert s("一般企業") == "その他"
