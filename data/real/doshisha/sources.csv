@@ -1,0 +1,12 @@
+source_id,url,source_name,source_type,retrieved_at,published_at,target_year,scope,reliability,note
+dsh-about,https://career-center.doshisha.ac.jp/career/disclosure/employment_data.html,同志社大学キャリアセンター 就職統計情報,university,2026-10-05,,2025,public,A,
+dsh-gakubu-2025,https://career-center.doshisha.ac.jp/files/shshk/page/gakubu2026.pdf,同志社大学 学部学科・研究科別就職状況一覧表（2025年度）,university,2026-10-05,2026-03-31,2025,public,A,2026年3月31日現在。2025年9月・2026年3月卒業生。多学科学部は学部計の行を使用。就職者=正規の職員（1年以上の非正規を含まない）。就職率=就職率①（就職者÷就職希望者）。卒業者数・進学者数は学部別非公開
+dsh-gakubu-2024,https://career-center.doshisha.ac.jp/files/shshk/page/gakubu2025.pdf,同志社大学 学部学科・研究科別就職状況一覧表（2024年度）,university,2026-10-05,2025-03-31,2024,public,A,2025年3月31日現在。2024年9月・2025年3月卒業生。多学科学部は学部計の行を使用。就職率=就職率①（就職者÷就職希望者）。卒業者数・進学者数は学部別非公開
+dsh-gyoshu-2025,https://career-center.doshisha.ac.jp/files/shshk/page/shobunrui2026.pdf,同志社大学 業種別学部・学科・専攻別就職者数一覧表（2025年度）,university,2026-10-05,,2025,public,A,多学科学部は学部計列を使用、男女を合算。区分は大学公表の小分類（コード除く）のまま標準区分へ対応付け
+dsh-gyoshu-2024,https://career-center.doshisha.ac.jp/files/shshk/page/shobunrui2025.pdf,同志社大学 業種別学部・学科・専攻別就職者数一覧表（2024年度）,university,2026-10-05,,2024,public,A,多学科学部は学部計列を使用、男女を合算。区分は大学公表の小分類（コード除く）のまま標準区分へ対応付け
+dsh-law-comp-2024,https://law.doshisha.ac.jp/files/houjm/page/shushokusakiichiran202504.pdf,同志社大学 法学部卒業生就職先一覧（2025年4月採用）,university,2026-10-05,,2024,public,A,法律・政治学科合算。2025年4月採用=2024年度卒業。人数非公開。industry_raw は資料の業種見出し（＜メーカー＞等）。「海外の企業・団体」は除外
+dsh-letters-comp-2025,https://letters.doshisha.ac.jp/letters/philosophy/career.html,同志社大学 文学部 各学科 進路・就職（2025年度卒業生の就職先）,university,2026-10-05,,2025,public,A,哲学科・美学芸術学科・文化史学科・国文学科の各ページ（/letters/{philosophy,aesthetics,cultural_history,japanese_literature}/career.html）を学部に合算し重複除去。進学先は除外。英文学科は年度記載のない抜粋のため除外
+dsh-ss-comp,https://ss.doshisha.ac.jp/ss/f_overview/career.html,同志社大学 社会学部 進路・就職・資格（主な就職先）,university,2026-10-05,,2025,public,A,掲載年度の記載なし。取得時点の掲載内容を2025年度として登録。人数非公開
+dsh-com-top10-2025,https://com.doshisha.ac.jp/files/shojm/page/2025sho_naiteikigyo_top10.pdf,同志社大学 商学部 内定企業上位10社（2025年度）,university,2026-10-05,,2025,public,A,人数公表あり（上位10社、同数で12社）。同ページ（/com/career/career.html）に商学部の卒業者875名・大学院進学11名等の進路状況も掲載
+dsh-cis-comp,https://www.cis.doshisha.ac.jp/career/destination/,同志社大学 文化情報学部 就職・進路情報（主な就職実績）,university,2026-10-05,,2025,public,A,2023～2025年度卒業の3年分合算リスト。2025年度として登録。人数非公開
+dsh-psy-comp,https://psych.doshisha.ac.jp/career/,同志社大学 心理学部 就職・進路（過去3年間の主な就職・進学実績）,university,2026-10-05,,2025,public,A,過去3年間の学部卒業生の就職先（研究科生進路・進学先は除外）。年度範囲の明記なし。2025年度として登録。industry_raw は見出し

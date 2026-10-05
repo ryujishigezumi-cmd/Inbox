@@ -54,3 +54,7 @@ def test_company_list_headings():
     assert s("製薬企業") == "製造業"
     assert s("行政") == "公務"
     assert s("一般企業") == "その他"
+
+
+def test_cooperative_is_compound_service():
+    assert s("郵便局・協同組合業") == "サービス業"
