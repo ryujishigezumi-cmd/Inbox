@@ -1,0 +1,12 @@
+university_id,faculty_id,year,graduates,employed,further_study,employment_rate,source_id
+aoyama,aoyama-letters,2025,731,620,32,96.0,ag-ritsu-2025
+aoyama,aoyama-education,2025,295,248,24,98.0,ag-ritsu-2025
+aoyama,aoyama-economics,2025,527,449,6,94.9,ag-ritsu-2025
+aoyama,aoyama-law,2025,482,403,29,96.9,ag-ritsu-2025
+aoyama,aoyama-business,2025,521,467,18,97.7,ag-ritsu-2025
+aoyama,aoyama-sipeb,2025,310,265,15,96.7,ag-ritsu-2025
+aoyama,aoyama-culture,2025,261,225,8,95.3,ag-ritsu-2025
+aoyama,aoyama-global,2025,186,171,6,98.8,ag-ritsu-2025
+aoyama,aoyama-community,2025,244,224,5,97.0,ag-ritsu-2025
+aoyama,aoyama-scieng,2025,682,291,353,96.0,ag-ritsu-2025
+aoyama,aoyama-socinfo,2025,194,179,5,98.4,ag-ritsu-2025

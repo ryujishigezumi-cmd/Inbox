@@ -1,0 +1,6 @@
+source_id,url,source_name,source_type,retrieved_at,published_at,target_year,scope,reliability,note
+ag-data,https://www.aoyama.ac.jp/career/data/,青山学院大学 進路・就職状況データ,university,2026-10-05,,2025,public,A,
+ag-shinro-2025,https://www.aoyama.ac.jp/wp-content/uploads/2026/07/cp_houkokusyo2025_1.pdf,青山学院大学 進路状況（学部）2025年度,university,2026-10-05,,2025,public,A,学部行の値をそのまま使用（卒業者・進学者）
+ag-ritsu-2025,https://www.aoyama.ac.jp/wp-content/uploads/2026/07/cp_houkokusyo2025_2.pdf,青山学院大学 2025年度卒業者の就職率（学部）,university,2026-10-05,,2025,public,A,学部行の値をそのまま使用。graduates・further_study は ag-shinro-2025 から。employed は就職者（状況調査：正規の職員等＋有期雇用労働者）。就職率は就職者÷就職希望者（2025年度より資格試験準備者は就職希望者に含まない）
+ag-gyoshu-2025,https://www.aoyama.ac.jp/wp-content/uploads/2026/07/cp_houkokusyo2025_5.pdf,青山学院大学 就職決定者数【業種別】（学部）2025年度,university,2026-10-05,,2025,public,A,学部の男女行を合算。大分類（A〜T）のみ使用し内訳の小分類は除外。区分は大学公表のまま標準区分へ対応付け
+ag-kigyo-2025,https://www.aoyama.ac.jp/wp-content/uploads/2026/07/cp_houkokusyo2025_7.pdf,青山学院大学 学部別就職決定状況【上位企業】2025年度,university,2026-10-05,,2025,public,A,学部別上位20社・団体（人数付き）。左列→右列の順に転記

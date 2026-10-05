@@ -1,0 +1,12 @@
+faculty_id,university_id,faculty,department,field,student_count,source_id
+aoyama-letters,aoyama,文学部,,文系,,ag-shinro-2025
+aoyama-education,aoyama,教育人間科学部,,文理融合,,ag-shinro-2025
+aoyama-economics,aoyama,経済学部,,文系,,ag-shinro-2025
+aoyama-law,aoyama,法学部,,文系,,ag-shinro-2025
+aoyama-business,aoyama,経営学部,,文系,,ag-shinro-2025
+aoyama-sipeb,aoyama,国際政治経済学部,,文系,,ag-shinro-2025
+aoyama-culture,aoyama,総合文化政策学部,,文系,,ag-shinro-2025
+aoyama-global,aoyama,地球社会共生学部,,文系,,ag-shinro-2025
+aoyama-community,aoyama,コミュニティ人間科学部,,文系,,ag-shinro-2025
+aoyama-scieng,aoyama,理工学部,,理系,,ag-shinro-2025
+aoyama-socinfo,aoyama,社会情報学部,,文理融合,,ag-shinro-2025
