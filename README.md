@@ -25,6 +25,11 @@ AI 要約・攻略仮説は Claude（既定 `claude-opus-5-5`）を使います�
 | `RMI_AI_ENABLED` | `1` | `0` で AI を使わない |
 | `RMI_AI_MODEL` / `RMI_AI_EFFORT` | `claude-opus-5-5` / `medium` | AI モデルと effort |
 
+## ブラウザ版デモ（インストール不要）
+
+`python scripts/build_static_demo.py` で、全画面を1ファイルに埋め込んだ `dist/demo.html` を生成します。
+サーバー無しでブラウザだけで開けます（AI 提案はルールベース、自由記述の分類はキーワード辞書で動作）。
+
 ## 画面（仕様書 9〜13章）
 
 | 画面 | URL | 目的 |
