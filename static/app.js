@@ -81,8 +81,8 @@ async function viewRanking(params) {
         ${META.weights.opportunity.map((w) => `<div class="barrow"><span>${esc(w.label)}</span>${bar(w.weight / 20)}<span class="v">${w.weight}点</span></div>`).join("")}
         <p class="small muted">欠損した指標は 0 ではなく中立値で補完し、欠損として明示します。</p></div>
       <div class="card"><h3>採用競合スコア（Recruiting Competition Score）</h3>
-        ${META.weights.competition.map((w) => `<div class="barrow"><span>${esc(w.label)}</span>${bar(w.weight / 0.3)}<span class="v">${(w.weight * 100).toFixed(0)}%</span></div>`).join("")}
-        <p class="small muted">事業競合ではなく「同じ学生市場に出現する企業」を競合とみなします。</p></div>
+        ${META.weights.competition.map((w) => `<div class="barrow"><span>${esc(w.label)}${w.available === false ? ' <span class="tag">データ未投入</span>' : ""}</span>${bar(w.available === false ? 0 : w.weight / 0.3)}<span class="v">${w.available === false ? "—" : (w.weight * 100).toFixed(0) + "%"}</span></div>`).join("")}
+        <p class="small muted">事業競合ではなく「同じ学生市場に出現する企業」を競合とみなします。データ未投入のシグナルは重みから外して再計算します。</p></div>
     </div>`;
   document.getElementById("filters").addEventListener("submit", (e) => {
     e.preventDefault();

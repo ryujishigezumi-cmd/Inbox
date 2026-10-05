@@ -258,7 +258,7 @@ def rule_based_strategy(a, fid, ctx):
     comp_inds = {c["industry"] for c in comps}
     if comp_inds - {target_ind}:
         appeals.append(f"{target_ind}企業としてのみ訴求すると、{'・'.join(sorted(comp_inds - {target_ind}))} 志望層との比較で優位を作りにくい。事業の幅（企画・物流・IT 等）を前面に出す仮説。")
-    if "IT・通信" in comp_inds or "コンサル" in comp_inds:
+    if "情報通信業" in comp_inds or "サービス業" in comp_inds:
         appeals.append("IT/DX 志向層に向け、DX・SCM・EC 等のキャリアの具体例を示す仮説。")
         actions.append("商品企画 / DX テーマの少人数イベント")
     if any(r["theme"] in ("転勤",) for r in avoid) or any(r["theme"] == "転勤が多い" for r in avoid):

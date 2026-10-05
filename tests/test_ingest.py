@@ -70,3 +70,14 @@ def test_incremental_ingest_keeps_other_rows(tmp_path):
     ingest.ingest_dir(conn, add)
     rows = db.rows(conn, "SELECT faculty_id, count FROM employment_company ORDER BY faculty_id")
     assert rows == [{"faculty_id": "f1", "count": 5}, {"faculty_id": "f2", "count": 7}]
+
+
+def test_industries_standardized_and_summed(tmp_path):
+    _minimal(tmp_path)
+    _write(tmp_path, "employment_industries", ["university_id", "faculty_id", "year", "industry", "count", "ratio", "source_id"],
+           [("u1", "f1", 2025, "教育・学習支援業", "3", "", "s1"), ("u1", "f1", 2025, "医療，福祉", "2", "", "s1"),
+            ("u1", "f1", 2025, "卸売業・小売業", "", "", "s1")])
+    conn = ingest.reset_db(tmp_path / "t.db")
+    ingest.ingest_dir(conn, tmp_path)
+    rows = {r["industry"]: r["count"] for r in db.rows(conn, "SELECT industry, count FROM employment_industry")}
+    assert rows == {"サービス業": 5, "卸売業・小売業": None}  # 合算、非公開は NULL のまま

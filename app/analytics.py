@@ -9,15 +9,16 @@ from collections import defaultdict
 from . import config, db
 
 # Signal 6: 志望業界の近接性。自社業界（キー）から見た各業界の近さ（0-1）。
+# 業種は文部科学省「学校基本調査」準拠の標準区分（app/industries.py）。自社業界から見た各業種の近さ（0-1）。
 INDUSTRY_PROXIMITY = {
-    "小売": {"小売": 1.0, "IT・通信": 0.7, "メーカー": 0.7, "物流": 0.7, "食品": 0.6, "商社": 0.6,
-             "コンサル": 0.5, "金融": 0.5, "広告・メディア": 0.5, "航空・旅行": 0.5, "不動産": 0.4,
-             "インフラ": 0.4, "公務": 0.3},
+    "卸売業・小売業": {"卸売業・小売業": 1.0, "製造業": 0.7, "情報通信業": 0.7, "運輸業・郵便業": 0.7,
+                     "金融業・保険業": 0.5, "サービス業": 0.5, "不動産業・物品賃貸業": 0.4, "建設業": 0.4,
+                     "電気・ガス・熱供給・水道業": 0.3, "公務": 0.3, "農林漁業・鉱業": 0.3, "その他": 0.3},
 }
 DEFAULT_PROXIMITY = 0.3
 
 # 8章「業界適合性」：小売・IT・メーカー・金融等との親和性
-FIT_INDUSTRIES = {"小売", "IT・通信", "メーカー", "金融"}
+FIT_INDUSTRIES = {"卸売業・小売業", "情報通信業", "製造業", "金融業・保険業"}
 
 COMPETITION_WEIGHTS = {
     "s1_faculty_presence": 0.20,   # Signal 1: 当該学部での就職先重複
@@ -113,6 +114,9 @@ class Analytics:
                 self.signals[r["company_id"]][r["signal_type"]] = r["value"]
         favs = [s.get("favorites") or 0 for s in self.signals.values()]
         self.max_favorites = max(favs) if favs else 0
+        has_rank = any(k.startswith("rank_") for s in self.signals.values() for k in s)
+        self.unavailable_signals = [k for k, ok in (("s4_student_interest", self.max_favorites > 0),
+                                                    ("s5_popularity", has_rank)) if not ok]
 
         self._global_cache = {}
         self._opportunity_cache = None
@@ -175,10 +179,13 @@ class Analytics:
                 sig["s1_faculty_presence"] = 0.5 + 0.5 * share
             else:
                 sig["s1_faculty_presence"] = 0.0
-            weights = COMPETITION_WEIGHTS
+            weights = dict(COMPETITION_WEIGHTS)
         else:
             # 学部を指定しない（全体）場合は s1 を除いて再正規化
             weights = {k: v for k, v in COMPETITION_WEIGHTS.items() if k != "s1_faculty_presence"}
+        # データ源そのものが未投入のシグナルは 0 点扱いせず、重みから外して再正規化する
+        for k in self.unavailable_signals:
+            weights.pop(k, None)
         total_w = sum(weights.values())
         score = sum(sig[k] * w for k, w in weights.items()) / total_w * 100
         breakdown = [{"key": k, "label": SIGNAL_LABELS[k], "value": round(sig[k], 3),

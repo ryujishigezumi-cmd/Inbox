@@ -9,15 +9,18 @@ import json
 import os
 import re
 import sys
+import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 os.environ["RMI_AI_ENABLED"] = "0"
+# デモは常に同梱のサンプル（架空値）から作る。手元の rmi.db（実データの場合あり）は使わない
+os.environ["RMI_DB_PATH"] = str(Path(tempfile.mkdtemp()) / "demo.db")
 
 from fastapi.testclient import TestClient  # noqa: E402
 
-from app import config, main  # noqa: E402
+from app import config, ingest, main  # noqa: E402
 from app.analytics import Analytics  # noqa: E402
 from app.insights import THEMES  # noqa: E402
 
@@ -80,6 +83,9 @@ window.RMI_STATIC = async (path, opts) => {
 
 
 def build(out: Path):
+    conn = ingest.reset_db(config.DB_PATH)
+    ingest.ingest_dir(conn, config.SAMPLE_DIR)
+    conn.close()
     main._conn = None
     client = TestClient(main.app)
     get = lambda path, **params: client.get(path, params=params).raise_for_status().json()  # noqa: E731

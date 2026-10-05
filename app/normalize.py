@@ -20,6 +20,8 @@ def normalize_company_name(raw: str) -> str:
     s = unicodedata.normalize("NFKC", raw).strip().lower()
     for lf in _LEGAL_FORMS:
         s = s.replace(unicodedata.normalize("NFKC", lf).lower(), "")
+    s = re.sub(r"\s*(など|等)$", "", s)
+    s = re.sub(r"[(（][^()（）]*[)）]", "", s)  # 括弧書きの略称・補足は除く: 日本電気（ＮＥＣ）→ 日本電気
     s = re.sub(r"[\s・\-‐－―]", "", s)
     s = re.sub(r"[()（）「」『』]", "", s)
     changed = True

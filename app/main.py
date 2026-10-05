@@ -44,7 +44,8 @@ def meta(a: Analytics = Depends(get_analytics)):
         "counts": {"universities": len(a.universities), "faculties": len(a.faculties), "companies": len(a.companies)},
         "regions": sorted({u["region"] for u in a.universities.values() if u["region"]}),
         "fields": sorted({f["field"] for f in a.faculties.values() if f["field"]}),
-        "weights": {"competition": [{"key": k, "label": SIGNAL_LABELS[k], "weight": w} for k, w in COMPETITION_WEIGHTS.items()],
+        "weights": {"competition": [{"key": k, "label": SIGNAL_LABELS[k], "weight": w,
+                                     "available": k not in a.unavailable_signals} for k, w in COMPETITION_WEIGHTS.items()],
                     "opportunity": [{"key": k, "label": OPPORTUNITY_LABELS[k], "weight": w} for k, w in OPPORTUNITY_WEIGHTS.items()]},
         "competitor_options": [{"company_id": c["company_id"], "name": c["name"]} for c in a.global_competitors(30)],
         "ai_enabled": config.AI_ENABLED,
@@ -104,7 +105,7 @@ def faculty_detail(fid: str, a: Analytics = Depends(get_analytics)):
     neighbors = [c for c in companies if c["company_id"] != a.target_id and c["industry"] == tgt_ind]
     ind_year, inds = a.latest_industries(fid)
     proximity = [{"industry": r["industry"], "ratio": r["ratio"], "proximity": a.proximity.get(r["industry"])}
-                 for r in inds if r["industry"] in ("小売", "IT・通信", "メーカー", "物流", "商社", "食品")]
+                 for r in inds if r["industry"] != tgt_ind and (a.proximity.get(r["industry"]) or 0) >= 0.6]
     src_ids = [f["source_id"], u["source_id"]] + [o["source_id"] for o in a.outcomes.get(fid, [])] \
         + [c["source_id"] for c in companies] + [r["source_id"] for rows in industries_by_year.values() for r in rows]
     return {

@@ -20,6 +20,7 @@ import sys
 from pathlib import Path
 
 from . import config, db
+from .industries import standardize_industry
 from .normalize import build_alias_index, normalize_company_name, resolve_company_id
 
 LOAD_ORDER = [
@@ -108,7 +109,8 @@ def load_companies(conn, rows):
         _require_source(conn, r.get("source_id"), f"companies.csv 行{i+2}")
         conn.execute(
             "INSERT OR REPLACE INTO company_master VALUES (?,?,?,?,?,?,?,?,?,?)",
-            (r["company_id"], r["name"], _str(r.get("industry")), _int(r.get("hiring_count")),
+            (r["company_id"], r["name"], standardize_industry(r["industry"]) if _str(r.get("industry")) else None,
+             _int(r.get("hiring_count")),
              _int(r.get("starting_salary")), _str(r.get("locations")), _str(r.get("transfer_policy")),
              _str(r.get("career_system")), _str(r.get("recruit_url")), r["source_id"]),
         )
@@ -144,13 +146,19 @@ def load_employment_companies(conn, rows):
 
 
 def load_employment_industries(conn, rows):
+    """大学ごとの公開区分を標準区分へ寄せる。同じ標準区分に入る行は合算する。"""
+    agg = {}
     for i, r in enumerate(rows):
         _require_source(conn, r.get("source_id"), f"employment_industries.csv 行{i+2}")
-        conn.execute(
-            "INSERT OR REPLACE INTO employment_industry VALUES (?,?,?,?,?,?,?)",
-            (r["university_id"], r["faculty_id"], _int(r["year"]), r["industry"],
-             _int(r.get("count")), _float(r.get("ratio")), r["source_id"]),
-        )
+        key = (r["university_id"], r["faculty_id"], _int(r["year"]), standardize_industry(r["industry"]))
+        cur = agg.setdefault(key, {"count": None, "ratio": None, "source_id": r["source_id"]})
+        for f, conv in (("count", _int), ("ratio", _float)):
+            v = conv(r.get(f))
+            if v is not None:
+                cur[f] = (cur[f] or 0) + v
+    for (uid, fid, year, ind), v in agg.items():
+        conn.execute("INSERT OR REPLACE INTO employment_industry VALUES (?,?,?,?,?,?,?)",
+                     (uid, fid, year, ind, v["count"], round(v["ratio"], 4) if v["ratio"] is not None else None, v["source_id"]))
 
 
 def load_student_signals(conn, rows):

@@ -1,0 +1,5 @@
+source_id,url,source_name,source_type,retrieved_at,published_at,target_year,scope,reliability,note
+ku-about,https://www.kansai-u.ac.jp/career/examinee/about.html,関西大学キャリアセンター 就職実績について,university,2026-10-05,,2025,public,A,
+ku-gakka-2025,https://www.kansai-u.ac.jp/career/pdf/examinee/gakkabetsu.pdf,関西大学 学科別就職率（2025年度・2024年度 就職・進路状況）,university,2026-10-05,,2025,public,A,学科の値を学部単位に合算。就職率は就職決定者÷就職活動者
+ku-gyoshu-2025,https://www.kansai-u.ac.jp/career/pdf/examinee/gyoshu-shushoku.pdf,関西大学 業種別就職状況〈学部・大学院〉,university,2026-10-05,2026-05-01,2025,public,A,2026年5月1日現在。区分は大学公表のまま標準区分へ対応付け
+ku-com-data,https://www.kansai-u.ac.jp/Fc_com/data/,関西大学 商学部 データで見る商学部（卒業生の主な就職先）,university,2026-10-05,,2024,public,A,企業名のみ公開（人数非公開）
