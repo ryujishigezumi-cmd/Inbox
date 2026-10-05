@@ -1,0 +1,6 @@
+faculty_id,university_id,faculty,department,field,student_count,source_id
+hitotsubashi-commerce,hitotsubashi,商学部,,文系,1163,hit-gakusei-2026
+hitotsubashi-economics,hitotsubashi,経済学部,,文系,1169,hit-gakusei-2026
+hitotsubashi-law,hitotsubashi,法学部,,文系,727,hit-gakusei-2026
+hitotsubashi-sociology,hitotsubashi,社会学部,,文系,1055,hit-gakusei-2026
+hitotsubashi-sds,hitotsubashi,ソーシャル・データサイエンス学部,,文理融合,249,hit-gakusei-2026

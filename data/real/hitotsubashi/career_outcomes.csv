@@ -1,0 +1,5 @@
+university_id,faculty_id,year,graduates,employed,further_study,employment_rate,source_id
+hitotsubashi,hitotsubashi-commerce,2025,285,250,15,,hit-shinro-2025
+hitotsubashi,hitotsubashi-economics,2025,276,209,45,,hit-shinro-2025
+hitotsubashi,hitotsubashi-law,2025,174,114,39,,hit-shinro-2025
+hitotsubashi,hitotsubashi-sociology,2025,249,211,25,,hit-shinro-2025

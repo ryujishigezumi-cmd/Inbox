@@ -1,0 +1,5 @@
+source_id,url,source_name,source_type,retrieved_at,published_at,target_year,scope,reliability,note
+hit-shinro-2025,https://www.hit-u.ac.jp/shushoku/wp-content/uploads/2026/07/2025年度令和７年度学部卒業生進路状況.pdf,一橋大学キャリア支援室 2025年度（令和7年度）学部卒業生進路状況,university,2026-10-05,2026-05-01,2025,public,A,2026年5月1日現在。男女別の値を学部ごとに合算。業種区分は大学公表のまま（サービス業・その他の業種は1区分）。進学者は大学院進学者（その他進学者0）。学部別就職率は非公表のため空欄（全学95.73%＝就職者÷就職希望者）
+hit-rate-2025,https://www.hit-u.ac.jp/shushoku/wp-content/uploads/2026/07/進路状況（就職率）学部.pdf,一橋大学キャリア支援室 進路状況（就職率）学部 2021年度～2025年度,university,2026-10-05,,2025,public,A,全学のみ。就職率＝就職者÷就職希望者（2025年度95.73%、2024年度96.30%）
+hit-juken-career-2025,https://juken.hit-u.ac.jp/campus_life/career/,一橋大学で学びたい方へ キャリア支援（学部別 2025年度卒業生進路状況 主な進路先）,university,2026-10-05,2026-05-01,2025,public,A,2026年5月1日現在。学部別の主な進路先15社（人数非公開）
+hit-gakusei-2026,https://www.hit-u.ac.jp/guide/data/pdf/data_g_1.pdf,一橋大学 データ集（2026年度） 教職員数・学生数,university,2026-10-05,2026-05-01,2025,public,A,2026年5月1日現在の学部学生数（学科・男女を学部に合算）
