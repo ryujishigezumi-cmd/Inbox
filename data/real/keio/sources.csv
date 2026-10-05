@@ -1,0 +1,8 @@
+source_id,url,source_name,source_type,retrieved_at,published_at,target_year,scope,reliability,note
+keio-date,https://www.students.keio.ac.jp/com/career/service/date.html,慶應義塾大学塾生サイト 就職・進路データ（直近5年度分）,university,2026-10-05,,2025,public,A,各年度の資料はこのページからリンクされた大学公開のGoogleドライブPDF
+keio-gyoshu-2025,https://drive.google.com/file/d/1Gsk8Qm01VlMSovHhVc3PPLKJvn4s61OM/view,慶應義塾大学 2025年度 業種別就職および進学等状況,university,2026-10-05,2026-05-01,2025,public,A,塾生サイト就職・進路データ掲載。2026年5月1日現在・2025年9月卒業含む。卒業者・就職者・進学者・業種は学部列の値（小計行は除き細目のみ）。就職者は進学就職者を含み、進学者は含まない。医学部の臨床研修医はその他扱いのため就職者0。就職率は2025年度学科別就職率（私学事業団定義＝就職者÷(卒業者−進学者計−外国の学校等入学者)）。法・理工・薬は学科値を合算し同定義で再計算（大学公表値と同じく小数1位切捨て）。医学部の就職率は臨床研修医を就職者に含む大学公表値
+keio-gakka-2025,https://drive.google.com/file/d/1rfS_XOcP6AXq3TNphYuC_ialHn-hEy8h/view,慶應義塾大学 2025年度 日本私立学校振興・共済事業団の定めによる就職率（学科別）,university,2026-10-05,2026-05-01,2025,public,A,就職率の出典。学科→学部合算の検算に使用
+keio-gyoshu-2024,https://drive.google.com/file/d/1_zpZCZ8c2KPUVp_WH2n6t41fnr7oMcV4/view,慶應義塾大学 2024年度 業種別就職および進学等状況,university,2026-10-05,2025-05-01,2024,public,A,2025年5月1日現在。加工方法は2025年度と同じ。就職率は2024年度学科別就職率（法・理工・薬は学科合算で再計算）
+keio-gakka-2024,https://drive.google.com/file/d/1GyXdWNWM5PujkdummUDouJvTRo2ww_Ru/view,慶應義塾大学 2024年度 日本私立学校振興・共済事業団の定めによる就職率（学科別）,university,2026-10-05,2025-05-01,2024,public,A,就職率の出典
+keio-3mei-2025,https://drive.google.com/file/d/1pa8GYb407CTMCIIpaLRN2dKJoLMuf-4G/view,慶應義塾大学 2025年度 3名以上就職先,university,2026-10-05,2026-05-01,2025,public,A,全学合計3名以上の就職先について学部列の人数を転記（学部人数1以上の行のみ）。研究科列は除外。医学部は資料対象外
+keio-students-2026,https://www.keio.ac.jp/fixed-files/2026-university.pdf,慶應義塾大学 学生数（学部・研究科別）,university,2026-10-05,2026-05-01,2026,public,A,学士課程の学生数（通信教育課程除く）

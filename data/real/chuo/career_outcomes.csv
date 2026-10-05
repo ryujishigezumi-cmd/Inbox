@@ -1,0 +1,17 @@
+university_id,faculty_id,year,graduates,employed,further_study,employment_rate,source_id
+chuo,chuo-law,2025,1320,981,,97.6,chuo-kettei-2025
+chuo,chuo-economics,2025,1128,1011,,96.8,chuo-kettei-2025
+chuo,chuo-commerce,2025,1072,950,,97.8,chuo-kettei-2025
+chuo,chuo-science,2025,1120,553,,98.2,chuo-kettei-2025
+chuo,chuo-letters,2025,1082,945,,97.3,chuo-kettei-2025
+chuo,chuo-policy,2025,314,275,,97.9,chuo-kettei-2025
+chuo,chuo-globalmgmt,2025,297,217,,91.6,chuo-kettei-2025
+chuo,chuo-globalinfo,2025,147,128,,95.5,chuo-kettei-2025
+chuo,chuo-law,2024,,1036,,97.6,chuo-kettei-2025
+chuo,chuo-economics,2024,,942,,97.7,chuo-kettei-2025
+chuo,chuo-commerce,2024,,812,,97.8,chuo-kettei-2025
+chuo,chuo-science,2024,,456,,98.1,chuo-kettei-2025
+chuo,chuo-letters,2024,,839,,96.2,chuo-kettei-2025
+chuo,chuo-policy,2024,,252,,97.3,chuo-kettei-2025
+chuo,chuo-globalmgmt,2024,,225,,94.5,chuo-kettei-2025
+chuo,chuo-globalinfo,2024,,123,,97.6,chuo-kettei-2025

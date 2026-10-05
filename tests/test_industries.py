@@ -25,3 +25,19 @@ def test_school_destinations_are_education():
         assert s(label) == "サービス業"
     assert s("公立学校教員") == "公務"
     assert s("マスコミ") == "情報通信業"
+
+
+def test_welfare_is_not_finance():
+    assert s("社会保険・社会福祉・介護事業") == "サービス業"
+    assert s("保険業") == "金融業・保険業"
+
+
+def test_ambiguous_labels():
+    assert s("食品卸売業") == "卸売業・小売業"
+    assert s("私立学校教員・職員") == "サービス業"
+    assert s("国公立学校教員・職員") == "公務"
+    assert s("旅行・生活関連サービス") == "サービス業"
+    assert s("信用金庫・信用組合・労働金庫業 等") == "金融業・保険業"
+    assert s("印刷・同関連業") == "製造業"
+    assert s("製造業：電気・情報通信機械器具製造業") == "製造業"
+    assert s("情報") == "情報通信業"

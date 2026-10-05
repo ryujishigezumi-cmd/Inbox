@@ -1,0 +1,9 @@
+faculty_id,university_id,faculty,department,field,student_count,source_id
+chuo-law,chuo,法学部,,文系,5792,chuo-gakusei-2025
+chuo-economics,chuo,経済学部,,文系,4503,chuo-gakusei-2025
+chuo-commerce,chuo,商学部,,文系,4349,chuo-gakusei-2025
+chuo-science,chuo,理工学部,,理系,4328,chuo-gakusei-2025
+chuo-letters,chuo,文学部,,文系,4206,chuo-gakusei-2025
+chuo-policy,chuo,総合政策学部,,文系,1263,chuo-gakusei-2025
+chuo-globalmgmt,chuo,国際経営学部,,文系,1283,chuo-gakusei-2025
+chuo-globalinfo,chuo,国際情報学部,,文理融合,647,chuo-gakusei-2025
