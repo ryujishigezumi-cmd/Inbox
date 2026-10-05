@@ -68,7 +68,7 @@ async function viewRanking(params) {
         <td class="num">${r.rank}</td><td style="white-space:nowrap">${esc(r.university)}<div class="small muted">${esc(r.region)}・${esc(r.establishment)}</div></td>
         <td>${esc(r.faculty)}<div class="small muted">${esc(r.field || "")}</div></td>
         <td>${grade(r.grade)}</td><td class="num"><b>${num(r.score, 1)}</b></td><td class="num">${num(r.market_fit, 0)}</td>
-        <td class="num">${num(r.graduates)}</td><td>${listed(r.target_listed)}</td>
+        <td class="num">${r.market_size_basis === "employed" ? `${num(r.employed)}<div class="small muted">就職者</div>` : num(r.graduates)}</td><td>${listed(r.target_listed)}</td>
         <td class="num">${num(r.components.affinity * 100, 0)}</td>
         <td class="num">${r.competition_strength === null ? "—" : num(r.competition_strength, 0)}</td>
         <td class="num">${r.missing.includes("untapped") ? "—" : num(r.components.untapped * 100, 0)}</td>

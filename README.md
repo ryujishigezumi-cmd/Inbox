@@ -6,7 +6,22 @@
 > ⚠️ 同梱の `data/sample/` は **デモ用の架空値** です（大学・企業名は MVP 対象に合わせていますが、人数・評価・順位は実績ではありません）。
 > 画面上部にもデモ表示が出ます。実データは後述の CSV 形式で投入してください。
 
-## クイックスタート
+## 実データ（公開情報・MVP 対象16大学）
+
+`data/real/` に、MVP 対象16大学の就職実績を各大学の公式資料から転記して収録しています（178学部、2024〜2025年度中心）。
+
+```bash
+pip install -r requirements.txt
+python scripts/load_real_data.py   # 実データで rmi.db を作り直す（企業マスタも自動生成）
+uvicorn app.main:app
+```
+
+- 数値は資料に書かれた値だけを転記し、推計していません。非公開の項目は空欄です。資料ごとの加工（学科の合算など）は各大学の `sources.csv` の note に記録しています。
+- 大学ごとに取得できた範囲は異なります（例：早稲田は業種別が取得できず、同志社は学部別の卒業者数が非公開のため就職者数で市場規模を見ます）。
+- ONE CAREER・就職人気ランキング・企業の初任給などは未収録です。これらのシグナルは競合スコアの重みから外して計算します。
+- 追加・更新の手順は `data/real/README.md`、1校の検証は `python scripts/validate_real_dir.py <university_id>`。
+
+## クイックスタート（デモデータ）
 
 ```bash
 pip install -r requirements.txt

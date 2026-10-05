@@ -255,7 +255,12 @@ class Analytics:
         if self._opportunity_cache is not None:
             return self._opportunity_cache
         fids = list(self.faculties)
-        grads = {f: (self.latest_outcome(f) or {}).get("graduates") for f in fids}
+        # 市場規模は卒業者数。学部別の卒業者数が非公開の大学は、公表されている就職者数で代用する
+        grads, size_basis = {}, {}
+        for f in fids:
+            o = self.latest_outcome(f) or {}
+            grads[f] = o.get("graduates") or o.get("employed")
+            size_basis[f] = "graduates" if o.get("graduates") else ("employed" if o.get("employed") else None)
         max_log = max((math.log1p(g) for g in grads.values() if g), default=1)
         aff_raw = {f: self._industry_affinity_raw(f) for f in fids}
         max_aff = max((v for v in aff_raw.values() if v is not None), default=1) or 1
@@ -293,6 +298,7 @@ class Analytics:
                 "target_listed": listed if has_company_data else None,
                 "competition_strength": round(comp_strength, 1) if comp_strength is not None else None,
                 "market_fit": round((comp["affinity"] + comp["industry_fit"]) / 2 * 100, 1),
+                "market_size_basis": size_basis[f],
                 "top_competitors": [{"company_id": c["company_id"], "name": c["name"], "score": c["score"]} for c in comps[:3]],
             }
         # 優先度は相対評価（上位20%=A, 次30%=B, 次30%=C, 残り=D）
@@ -335,6 +341,7 @@ class Analytics:
                 "faculty": f["faculty"], "department": f.get("department"), "field": f.get("field"),
                 "region": u["region"], "establishment": u["establishment"],
                 "disclosure_level": u["disclosure_level"], "graduates": o.get("graduates"),
+                "employed": o.get("employed"), "market_size_basis": res["market_size_basis"],
                 **{k: res[k] for k in ("score", "grade", "rank", "market_fit", "target_listed",
                                        "competition_strength", "recommended_action", "top_competitors", "missing")},
                 "components": res["components"],
