@@ -1,0 +1,13 @@
+faculty_id,university_id,faculty,department,field,student_count,source_id
+kobe-letters,kobe,文学部,,文系,,kobe-data-2025
+kobe-intlhuman,kobe,国際人間科学部,,文理融合,,kobe-data-2025
+kobe-law,kobe,法学部,,文系,,kobe-data-2025
+kobe-economics,kobe,経済学部,,文系,,kobe-data-2025
+kobe-business,kobe,経営学部,,文系,,kobe-data-2025
+kobe-science,kobe,理学部,,理系,,kobe-data-2025
+kobe-medicine,kobe,医学部（医学科）,,理系,,kobe-data-2025
+kobe-health,kobe,医学部（保健学科）,,理系,,kobe-data-2025
+kobe-engineering,kobe,工学部,,理系,,kobe-data-2025
+kobe-agriculture,kobe,農学部,,理系,,kobe-data-2025
+kobe-maritime,kobe,海事科学部,,理系,,kobe-data-2025
+kobe-oceanpolicy,kobe,海洋政策科学部,,理系,,kobe-data-2025
