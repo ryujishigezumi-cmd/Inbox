@@ -1,0 +1,23 @@
+source_id,url,source_name,source_type,retrieved_at,published_at,target_year,scope,reliability,note
+demo-portraits,https://portraits.niad.ac.jp/,大学ポートレート,government,2026-10-01,,2024,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-mext,https://www.e-stat.go.jp/stat-search?toukei=00400001,文部科学省 学校基本調査,government,2026-10-01,,2024,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-onecareer,https://www.onecareer.jp/,ONE CAREER（公開メタデータ）,review,2026-10-01,,2026,sample,DEMO,デモ用の架空値。実データ取得時に置換すること。体験談本文は保存しない
+demo-survey-mynavi,https://career-research.mynavi.jp/,マイナビ 学生就職意識調査,survey,2026-10-01,,2026,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-survey-ranking,https://career-research.mynavi.jp/,就職人気企業ランキング,survey,2026-10-01,,2026,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-company,https://www.nitori.co.jp/recruit/,企業採用サイト（各社）,company,2026-10-01,,2026,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-waseda-career,https://www.waseda.jp/,早稲田大学 公式サイト（就職実績）,university,2026-10-01,2025-06-01,2024,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-keio-career,https://www.keio.ac.jp/,慶應義塾大学 公式サイト（就職実績）,university,2026-10-01,2025-06-01,2024,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-meiji-career,https://www.meiji.ac.jp/,明治大学 公式サイト（就職実績）,university,2026-10-01,2025-06-01,2024,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-aoyama-career,https://www.aoyama.ac.jp/,青山学院大学 公式サイト（就職実績）,university,2026-10-01,2025-06-01,2024,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-rikkyo-career,https://www.rikkyo.ac.jp/,立教大学 公式サイト（就職実績）,university,2026-10-01,2025-06-01,2024,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-chuo-career,https://www.chuo-u.ac.jp/,中央大学 公式サイト（就職実績）,university,2026-10-01,2025-06-01,2024,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-hosei-career,https://www.hosei.ac.jp/,法政大学 公式サイト（就職実績）,university,2026-10-01,2025-06-01,2024,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-hitotsubashi-career,https://www.hit-u.ac.jp/,一橋大学 公式サイト（就職実績）,university,2026-10-01,2025-06-01,2024,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-tsukuba-career,https://www.tsukuba.ac.jp/,筑波大学 公式サイト（就職実績）,university,2026-10-01,2025-06-01,2024,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-chiba-career,https://www.chiba-u.ac.jp/,千葉大学 公式サイト（就職実績）,university,2026-10-01,2025-06-01,2024,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-kobe-career,https://www.kobe-u.ac.jp/,神戸大学 公式サイト（就職実績）,university,2026-10-01,2025-06-01,2024,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-doshisha-career,https://www.doshisha.ac.jp/,同志社大学 公式サイト（就職実績）,university,2026-10-01,2025-06-01,2024,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-kansai-career,https://www.kansai-u.ac.jp/,関西大学 公式サイト（就職実績）,university,2026-10-01,2025-06-01,2024,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-kwansei-career,https://www.kwansei.ac.jp/,関西学院大学 公式サイト（就職実績）,university,2026-10-01,2025-06-01,2024,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-hiroshima-career,https://www.hiroshima-u.ac.jp/,広島大学 公式サイト（就職実績）,university,2026-10-01,2025-06-01,2024,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
+demo-fukuoka-career,https://www.fukuoka-u.ac.jp/,福岡大学 公式サイト（就職実績）,university,2026-10-01,2025-06-01,2024,sample,DEMO,デモ用の架空値。実データ取得時に置換すること
