@@ -18,3 +18,10 @@ def test_demo_labels_map_to_standard():
 def test_always_standard():
     for label in ["謎の区分", "", "その他", "医療，福祉", "電気・ガス・熱供給・水道業"]:
         assert s(label) in STANDARD_INDUSTRIES
+
+
+def test_school_destinations_are_education():
+    for label in ["小学校", "中学校・高等学校", "幼稚園", "保育所", "こども園"]:
+        assert s(label) == "サービス業"
+    assert s("公立学校教員") == "公務"
+    assert s("マスコミ") == "情報通信業"

@@ -1,0 +1,16 @@
+faculty_id,university_id,faculty,department,field,student_count,source_id
+kwansei-theology,kwansei,神学部,,文系,,kg-shinro-2025
+kwansei-letters,kwansei,文学部,,文系,,kg-shinro-2025
+kwansei-sociology,kwansei,社会学部,,文系,,kg-shinro-2025
+kwansei-law,kwansei,法学部,,文系,,kg-shinro-2025
+kwansei-economics,kwansei,経済学部,,文系,,kg-shinro-2025
+kwansei-commerce,kwansei,商学部,,文系,,kg-shinro-2025
+kwansei-scieng,kwansei,理工学部,,理系,,kg-shinro-2025
+kwansei-policy,kwansei,総合政策学部,,文系,,kg-shinro-2025
+kwansei-welfare,kwansei,人間福祉学部,,文系,,kg-shinro-2025
+kwansei-education,kwansei,教育学部,,文系,,kg-shinro-2025
+kwansei-intl,kwansei,国際学部,,文系,,kg-shinro-2025
+kwansei-science,kwansei,理学部,,理系,,kg-shinro-2025
+kwansei-engineering,kwansei,工学部,,理系,,kg-shinro-2025
+kwansei-lifeenv,kwansei,生命環境学部,,理系,,kg-shinro-2025
+kwansei-architecture,kwansei,建築学部,,理系,,kg-shinro-2025

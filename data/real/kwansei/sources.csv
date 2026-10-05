@@ -1,0 +1,7 @@
+source_id,url,source_name,source_type,retrieved_at,published_at,target_year,scope,reliability,note
+kg-career,https://www.kwansei.ac.jp/about/disclosure/career/,関西学院大学 進路・就職実績,university,2026-10-05,,2025,public,A,
+kg-shinro-2025,https://www.kwansei.ac.jp/assets/2025_shinroketteijyokyo_gakubu.pdf,関西学院大学 2025年度 進路・就職データ（学部）,university,2026-10-05,,2025,public,A,2026年5月キャリアセンター作成。学部の計行を転記（単一学科学部は学科行）。就職者数=「就職」（起業・自営を含まない）。就職率=就職÷就職希望者（就職＋就職希望だが未決定）。卒業者に9月卒業者・早期卒業者を含む
+kg-shinro-2024,https://www.kwansei.ac.jp/assets/gakububetusinrotourokuketteijyokyo_2024.pdf,関西学院大学 2024年度 進路・就職データ（学部）,university,2026-10-05,,2024,public,A,2025年5月キャリアセンター作成。学部の計行を転記（単一学科学部は学科行）。就職者数=「就職」（起業・自営を含まない）。就職率=就職÷就職希望者（就職＋就職希望だが未決定）
+kg-gyoshu-2025,https://www.kwansei.ac.jp/assets/2025_gyoshubetu_shushokujyokyo_gakubu.pdf,関西学院大学 2025年度 学部別 業種別就職状況,university,2026-10-05,,2025,public,A,割合（%）のみ公表、人数非公表のため ratio のみ。多段見出しは「・」で連結。教育学部は進路先区分（企業・小学校等）で別表
+kg-gyoshu-2024,https://www.kwansei.ac.jp/assets/gakububetsugyousyubetsusyusyokujyoukyo_2024.pdf,関西学院大学 2024年度 学部別 業種別就職状況,university,2026-10-05,,2024,public,A,割合（%）のみ公表、人数非公表のため ratio のみ。多段見出しは「・」で連結。教育学部は進路先区分（企業・小学校等）で別表
+kg-kigyo-2024,https://www.kwansei.ac.jp/assets/gakububetsu_syusyokusakikigyo_dantai_2024.pdf,関西学院大学 2024年度 学部別 就職先企業・団体,university,2026-10-05,,2024,public,A,学部別・人数付き（順位表）。2025年度版は学部と研究科の合算リストで人数なしのため不使用
